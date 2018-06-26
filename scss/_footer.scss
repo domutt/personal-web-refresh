@@ -1,0 +1,39 @@
+#footer-container {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	max-width: 1440px;
+	height: 70px;
+	margin-top: 3%;
+	margin-bottom: 1%;
+	.three-foot {
+		margin: 0 2.5%;
+		width: 40px;
+		height: 40px;
+		.email-me {
+			width: 40px;
+			height: 40px;
+			background: url("../images/mail.png") no-repeat center;
+			background-size: 100%;
+		}
+		.linkedin-me {
+			width: 40px;
+			height: 40px;
+			background: url("../images/linkedin.png") no-repeat center;
+			background-size: 100%;
+		}
+	}
+	#small-logo {
+		width: 70px;;
+		img {
+			width: 100%;
+		}
+	}
+}

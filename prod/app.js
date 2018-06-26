@@ -30,13 +30,13 @@ $(document).ready( function() {
     });
     $("#gd-menu").click(function () {
         $("#ui-menu").animate({"width": "0%", "z-index": "0"}, 500).removeAttr();
-        $("#gd-menu").animate({"width": "100%", "z-index": "999"}, 500).attr("style", "background-image: url('../images/about-bg.png'); background-color:  #FFDEFD; color: #FFFFFF; background-size: cover; background-position: right; background-repeat: no-repeat; background-blend-mode: multiply;");
+        $("#gd-menu").animate({"width": "100%", "z-index": "999"}, 500).attr("style", "background-image: url('../images/about-bg.png'); background-color:  #FFDEFD; color: #FFFFFF; background-size: 1440px; background-position: right; background-repeat: no-repeat; background-blend-mode: multiply;");
         $("#design-portfolio").delay(480).fadeIn("fast");
         $("#small-logo").fadeOut();
     });
     $("#ui-menu").click(function () {
         $("#gd-menu").animate({"width": "0%", "z-index": "0"}, 500).removeAttr();
-        $("#ui-menu").animate({"width": "100%", "z-index": "999"}, 500).attr("style", "background-image: url('../images/about-bg.png'); background-color:  #FFFACC; color: #FFFFFF; background-size: cover; background-position: left; background-repeat: no-repeat; background-blend-mode: multiply;");
+        $("#ui-menu").animate({"width": "100%", "z-index": "999"}, 500).attr("style", "background-image: url('../images/about-bg-reverse.png'); background-color:  #FFFACC; color: #FFFFFF; background-size: 1440px; background-position: left; background-repeat: no-repeat; background-blend-mode: multiply;");
         $("#ui-portfolio").delay(480).fadeIn("fast");
         $("#small-logo").fadeOut();
     });

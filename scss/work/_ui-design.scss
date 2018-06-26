@@ -1,0 +1,73 @@
+#ui-portfolio {
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	display: none;
+}
+
+#starz-container {
+	background-color: $color-darkest;
+	color: $color-lightest;
+	width: 100%;
+	.header {
+		padding-top: 4%;
+		width: 36%;
+		padding-bottom: 2%;
+		img {
+			width: 100%;
+			margin:auto;
+		}
+	}
+	.stz-three-screens {
+		width: 60%;
+		img {
+			margin-left: 40%;
+			width: 100%;
+			margin:auto;
+		}
+	}
+	.about-starz {
+		width: 100%;
+		padding-top: 4%;
+		padding-bottom: 4%;
+		color: $color-darkest;
+		background-color: $color-lightest;
+        .about-company {
+            width: 60%;
+            margin: auto;
+            font-size: 20px;
+            line-height: 30px;
+            font-weight: 700;
+            text-align: justify;
+        }
+	}
+    .project-headline {
+        width: 100%;
+        .project-box {
+            font-weight: 700;
+            font-size: 30px;
+            margin-left: 20%;
+            width: 58%;
+            padding: 1% ;
+            border: 2px solid $color-lightest;
+
+        }
+    }
+    .project-list {
+        width: 100%;
+        .list-item {
+            display: flex;
+            color: $color-darkest;
+            background-color: $color-lightest;
+            // justify-content: center;
+            flex-direction: row;
+            margin-left: 20%;
+            width: 58%;
+            font-size: 30px;
+            padding: 1% ;
+            border: 2px solid $color-lightest;
+
+        }
+
+    }
+}
