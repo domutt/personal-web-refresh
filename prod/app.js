@@ -28,30 +28,16 @@ $(document).ready( function() {
         $("#ui-menu").removeAttr("style");
         $("#gd-menu").removeAttr("style");
     });
-    // $("#gd-menu").css({"border": "4px #FFDEFD solid"});
-    // $("#gd-menu").hover(function () {
-    //     $("#gd-outline").css({"border": "4px #FFDEFD solid"});
-    // });
     $("#gd-menu").click(function () {
-        // $("#gd-outline").css({"border": "4px #FFFFFF solid"});
         $("#ui-menu").animate({"width": "0%", "z-index": "0"}, 500).removeAttr();
         $("#gd-menu").animate({"width": "100%", "z-index": "999"}, 500).attr("style", "background-image: url('../images/about-bg.png'); background-color:  #FFDEFD; color: #FFFFFF; background-size: cover; background-position: right; background-repeat: no-repeat; background-blend-mode: multiply;");
         $("#design-portfolio").delay(480).fadeIn("fast");
         $("#small-logo").fadeOut();
     });
-    // $("#ui-menu").css({"border": "4px #FFFACC solid"});
-    // $("#ui-menu").mouseOver(function () {
-    //     $("#ui-outline").css({"border": "4px #FFFFFF solid"});
-    // });
-    // $("#ui-menu").mouseLeave(function () {
-    //     $("#ui-outline").css({"border": "4px #FFFACC solid"});
-    // });
     $("#ui-menu").click(function () {
         $("#gd-menu").animate({"width": "0%", "z-index": "0"}, 500).removeAttr();
         $("#ui-menu").animate({"width": "100%", "z-index": "999"}, 500).attr("style", "background-image: url('../images/about-bg.png'); background-color:  #FFFACC; color: #FFFFFF; background-size: cover; background-position: left; background-repeat: no-repeat; background-blend-mode: multiply;");
         $("#ui-portfolio").delay(480).fadeIn("fast");
         $("#small-logo").fadeOut();
     });
-    $('.portfolio-header').parallax({imageSrc: '../images/gd_projects/3people-book.png'});
-
 });
