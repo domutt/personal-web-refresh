@@ -5,6 +5,7 @@
 @import 'about';
 @import 'work/work';
 #background {
+	z-index: -9999;
 	position: fixed;
 	top: 0;
 	right: 0;
@@ -14,7 +15,7 @@
 	max-width: 1440px;
 	height: 100vh;
 	margin: auto;
-	@extend %clearfix;
+	// @extend %clearfix;
 	#base-bg {
 		background-image: url("../images/about-bg-center.png");
 		background-color: #daf0e6;
@@ -111,6 +112,7 @@
 	position: absolute;
   	left: 0;
   	right: 0;
+	// z-index: -999;
   	margin-left: auto;
   	margin-right: auto;
   	max-width: 1440px; /* Need a specific value to work */
@@ -173,14 +175,14 @@
 		color: $color-darkest;
 		background-color: $color-lightest;
 	}
-}
-.about-company {
-	width: 60%;
-	margin: auto;
-	font-size: 20px;
-	line-height: 30px;
-	font-weight: 700;
-	text-align: justify;
+	.about-company {
+		width: 60%;
+		margin: auto;
+		font-size: 20px;
+		line-height: 30px;
+		font-weight: 700;
+		text-align: justify;
+	}
 }
 .one-up {
 	display: flex;
@@ -236,6 +238,7 @@
 }
 #about-container {
 	display: none;
+	// z-index: 9999;
 }
 .about-inner {
 	width: 90%;
