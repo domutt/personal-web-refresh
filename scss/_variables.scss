@@ -1,0 +1,96 @@
+//*********************************
+// VARIABLES **********************
+//*********************************
+
+// COLOR
+$color-lightest-trans: rgba(255,255,255,0.4);
+$color-lightest: #FFFFFF;
+$color-light: #F4F4F4;
+$color-g: #CAFFCA;
+$color-r: #FFDEFD;
+$color-b: #D9F1FF;
+$color-y: #FFFACC;
+$color-dark: #888988;
+$color-darker: #030316;
+$color-darkest: #000000;
+
+// OTHER
+$nav-height: 80px;
+
+//*********************************
+// FONTS **************************
+//*********************************
+// @include font-face("Monique", "/fonts/Monique-RegularRound20");
+// @include font-face("polya-webfont", "/fonts/polya-webfont");
+//*********************************
+// Universal  *********************
+//*********************************
+*, *:before, *:after {
+    @include font-face("Monique", fonts/Monique-RegularRound20);
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+html {
+    overflow-y: scroll;
+}
+body::-webkit-scrollbar {
+    // width: 0;
+}
+
+body {
+    /*z-index: 0;*/
+    font-family: 'Work Sans', sans-serif;
+    width: 100%;
+    cursor: crosshair;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+	// background-color: $color-light;
+	color: $color-darker;
+}
+
+h1 {
+	font-size: 36px;
+	color: $color-darker;
+    // margin:80px 0;
+}
+h2 {
+    font-size: 28px;
+	color: $color-darker;
+}
+h3 {
+
+}
+h4 {
+
+}
+P {
+    font-size: 18px;
+    line-height: 28px;
+    color: $color-darkest;
+}
+ul {
+
+	li {
+
+	}
+}
+table {
+
+	th {
+
+	}
+	td {
+
+	}
+}
+a {
+
+	&:hover{
+
+	}
+}
+img {
+
+}
