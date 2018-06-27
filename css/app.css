@@ -309,17 +309,15 @@ P {
   width: 100%; }
   #starz-container .header {
     padding-top: 4%;
-    width: 36%;
-    padding-bottom: 2%; }
+    width: 48%;
+    padding-bottom: 1%; }
     #starz-container .header img {
       width: 100%;
       margin: auto; }
   #starz-container .stz-three-screens {
-    width: 60%; }
+    width: 80%; }
     #starz-container .stz-three-screens img {
-      margin-left: 40%;
-      width: 100%;
-      margin: auto; }
+      width: 100%; }
   #starz-container .about-starz {
     width: 100%;
     padding-top: 4%;
@@ -339,25 +337,150 @@ P {
       font-weight: 700;
       font-size: 30px;
       margin-left: 20%;
+      margin-top: -2px;
       width: 58%;
       padding: 1%;
       border: 2px solid #FFFFFF; }
-  #starz-container .project-list {
-    width: 100%; }
-    #starz-container .project-list .list-item {
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      color: #000000;
-      background-color: #FFFFFF;
-      -webkit-flex-direction: row;
-          -ms-flex-direction: row;
-              flex-direction: row;
-      margin-left: 20%;
-      width: 58%;
-      font-size: 30px;
-      padding: 1%;
-      border: 2px solid #FFFFFF; }
+
+.project-list {
+  width: 100%; }
+  .project-list .list-item {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    color: #000000;
+    background-color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 20%;
+    width: 58%;
+    font-size: 30px;
+    font-weight: 700;
+    padding: 1%; }
+
+.expand-unexpand {
+  z-index: 1;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 30px;
+  height: 30px;
+  margin-right: 2%;
+  border: 3px solid #000;
+  border-radius: 100%; }
+  .expand-unexpand .plus-minus {
+    width: 30px;
+    height: 30px;
+    background-image: url("../images/icons/plus-blk.png");
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center; }
+    .expand-unexpand .plus-minus:hover {
+      width: 30px;
+      height: 30px;
+      border-radius: 100%;
+      background-image: url("../images/icons/plus.png");
+      background-size: 60%;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: #000000; }
+
+.project-details {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 60.25%;
+  margin-left: 20%;
+  font-size: 20px;
+  margin-bottom: 1.5%; }
+
+.project-team {
+  width: 100%;
+  border-top: 8px black solid;
+  margin-bottom: 2%; }
+  .project-team .title-of {
+    font-weight: 500;
+    padding: 1%;
+    border: 2px solid white;
+    background-color: white;
+    color: black; }
+  .project-team .sub-text-of {
+    margin-top: -2px;
+    padding: 3.5% 1%;
+    border: 2px solid white;
+    line-height: 30px; }
+
+.divider {
+  width: 40%;
+  margin-left: 30%;
+  height: 2px;
+  background-color: white; }
+
+.project-cons {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-left: 20%;
+  width: 60%; }
+  .project-cons .big-type-cons {
+    font-size: 30px;
+    font-weight: 600; }
+  .project-cons .overview-copy-cons {
+    font-size: 20px;
+    line-height: 30px; }
+
+.project-overview {
+  padding-top: 2%;
+  padding-bottom: 2%;
+  width: 70%;
+  margin-left: 15%;
+  background-color: white;
+  border: 2px solid white;
+  margin-top: 2%;
+  margin-bottom: 2%; }
+  .project-overview .big-type {
+    font-size: 30px;
+    font-weight: 600;
+    color: #000000;
+    width: 86%;
+    margin: 0 0 1% 7%;
+    padding-bottom: 1%;
+    border-bottom: 2px solid black; }
+  .project-overview .overview-copy {
+    word-wrap: break-word;
+    margin: 0 0 0 7%;
+    font-size: 20px;
+    color: black;
+    width: 86%;
+    line-height: 30px; }
+
+.process-steps {
+  width: 70%;
+  margin-left: 15%;
+  border-bottom: 2px white solid; }
+  .process-steps .step-copy {
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    font-size: 24px;
+    margin-left: 7%;
+    margin-bottom: 1%; }
+
+.process-step-description {
+  width: 70%;
+  margin-left: 15%; }
 
 #main-content {
   position: absolute;
