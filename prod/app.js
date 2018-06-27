@@ -40,4 +40,21 @@ $(document).ready( function() {
         $("#ui-portfolio").delay(480).fadeIn("fast");
         $("#small-logo").fadeOut();
     });
+    $("#project-1-button").click( function (){
+        $("#project-1-content").slideToggle("slow", function(){
+
+        });
+        $( "#project-1-button" ).toggleClass('rotate', function(){});
+    });
+    $("#project-2-button").click( function (){
+        $("#project-1-content").slideUp("slow", function (){
+            $( "#project-1-button" ).removeClass('rotate');
+        });
+    });
+    $("#project-3-button").click( function (){
+        $("#project-1-content").slideUp("slow", function(){
+            $( "#project-1-button" ).removeClass('rotate');
+
+        });
+    });
 });
