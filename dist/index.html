@@ -208,7 +208,7 @@
                 </div>
                 <div class="about-starz">
                     <div class="about-company">
-                        Starz is an American premium cable and satellite television network that provides video streaming services through a mobile application, 10-foot device applications (Roku, Amazon Fire, etc.) &amp; a web application to over 100 million users. They service two video streaming applications Starz their English speaking app &amp; Pantaya their Spanish based app. At Starz, I worked on the web platforms team for both Starz and Pantaya applications assisting with internal projects and also as a lead UI designer on several small-scale projects.
+                        Starz is an American premium cable and satellite television network that provides video streaming services on mobile platforms, 10-foot platforms (Roku, Amazon Fire, etc.) &amp; the web servicing two applications Starz (english) &amp; Pantaya (spanish). At Starz, I worked on the web platforms team for both applications assisting with internal projects and as a lead UI designer.
                     </div>
                 </div>
                 <div class="project-headline">
@@ -218,7 +218,7 @@
                 </div>
                 <div id="project-1-title" class="project-list">
                     <div id="starz-proj-1" class="list-item">
-                        <div class="p-title">File and File System Redesign</div>
+                        <div class="p-title">File and Design System Redesign</div>
                         <div id="project-1-button" class="expand-unexpand">
                             <div id="img-1-ch" class="plus-minus"></div>
                         </div>
@@ -273,24 +273,12 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="divider">
-
-                        </div>
+                        <div class="divider"></div>
                         <div class="project-cons">
-                            <div class="big-type-cons">
-                                Problem
-                            </div>
-                            <div class="overview-copy-cons">
-                                The disarray of the UI files was making it increasingly difficult to keep up with file maintenance &amp; updates. Finding the source of truth was time staking, &amp; upon discovery, it generally demanded updates before you could begin work.
-                            </div>
-                        <!-- </div>
-                        <div class="project-cons"> -->
-                            <div class="big-type-cons">
-                                Solution
-                            </div>
-                            <div class="overview-copy-cons">
-                                Create a single master file to be used as the source of truth &amp; to make updates rapidly.
-                            </div>
+                            <div class="big-type-cons">Problem</div>
+                            <div class="overview-copy-cons">The disarray of the UI files was making it increasingly difficult to keep up with file maintenance &amp; updates. Finding the source of truth was time staking, &amp; upon discovery, it generally demanded updates before you could begin work.</div>
+                            <div class="big-type-cons">Solution</div>
+                            <div class="overview-copy-cons">Develop a design system centered around a single master file to be used as a staple source of truth &amp; simplify the design system structure.</div>
                         </div>
                         <div class="divider"></div>
                         <div class="project-overview">
@@ -331,7 +319,7 @@
                         </div>
                         <div class="process-step-description">
                             <div class="">
-                                Throughout this process I was constantly harnessing Sketch Plugins to speed up production; working with batches, integrating files, multiple layer selection, etc. A few of my favorites: Craft, Symbol Instance Locator, Library Symbol Replacer, Merge Duplicate Symbols.
+                                Throughout this process I was constantly harnessing Sketch Plugins to speed up production; working with batches, integrating files, multiple layer selection, etc. A few of my favorite plug-ins: Craft, Symbol Instance Locator, Library Symbol Replacer, Merge Duplicate Symbols
                             </div>
                         </div>
                         <div class="single-panel">
@@ -382,6 +370,9 @@
 
 
                         </div>
+                        <!-- <div class="divider"> -->
+
+                        <!-- </div> -->
                         <div class="process-steps">
                             <div class="step-copy">
                                 Symbols
@@ -389,11 +380,46 @@
                         </div>
                         <div class="process-step-description">
                             <div class="step-info">
-                                After integrating a large portion of the design files I shifted focus to developing an easy to use symbol library. While begining this process Sketch released Symbol Libraries which allowed for a master symbol library that any one could link their file to &amp; use.
+                                After integrating a large portion of the design files I shifted focus to developing an easy to use symbol library. While beginning this process Sketch released Symbol Libraries which allowed for multiple designers to work from the same symbol file.
                             </div>
                         </div>
                         <div class="single-starz-img">
-                            <img src="images/starz/master-symbols.png" alt="">
+                            <img src="images/starz/symbol-link.png" alt="">
+                        </div>
+                        <div class="process-step-description">
+                            <div class="step-info">
+                                I used the atomic design system principles to manufacture the symbol library. I broke the symbols down into groups by component. Similarly, my naming convention used the components name (or abbreviated name) as the prefix. The naming and ordering of the symbol layers were paramount to keeping the symbols drop-down and overrides user-friendly. One component could have three separate symbols representing the element at the different screen sizes, which, made it a high priority that these symbols were titled and laid out the same to make overriding symbols, methodical.
+                            </div>
+                        </div>
+                        <div class="single-starz-img-wide">
+                            <img src="images/starz/nav-symbol.png" alt="">
+                        </div>
+                        <div class="process-steps">
+                            <div class="step-copy">
+                                Typography
+                            </div>
+                        </div>
+                        <div class="process-step-description">
+                            <div class="step-info">
+                                Our goal with the typography was to narrow down the catalog to header-one (H1) through paragraph (P) HTML tags. By creating an extensive catalog of all the fonts that were used we could easily gauge what sizes should be implemented. The naming convention used for the typography styles (Typography style naming convention: [HTML tag] / [Font Name] / [Alignment] / [Color]) allowed for seamless access through the drop-down menu eliviating any frustration.
+                            </div>
+                        </div>
+                        <div class="single-starz-img-wide">
+                            <img src="images/starz/typography.png" alt="">
+                        </div>
+
+                        <div class="process-steps">
+                            <div class="step-copy">
+                                Version Control Systems
+                            </div>
+                        </div>
+                        <div class="process-step-description">
+                            <div class="step-info">
+                                A version control system maintains a record of changes to a group of files for historical record and recollection. While establishing the new design system, there were many version control systems in development that aid in design collaboration, the iterative design process, and in keeping file update and access records. A technology that is well suited for designers that work on the same file concurrently. I carefully researched and tested the products leading to the adoption of the application best suited for the teams needs.
+                            </div>
+                        </div>
+                        <div class="single-starz-img">
+                            <img src="images/starz/Dominic Portfolio Icons-10.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -403,6 +429,70 @@
                         <div id="project-2-button" class="expand-unexpand">
                             <div id="img-2-ch" class="plus-minus"></div>
                         </div>
+                    </div>
+                    <div id="project-2-content" class="file-sys-container">
+                        <div class="project-details">
+                            <div class="project-team">
+                                <div class="twentyfive-perc">
+                                    <div class="title-of">
+                                        Role:
+                                    </div>
+                                    <div class="sub-text-of">
+                                        Lead UI Designer
+                                    </div>
+                                </div>
+                                <div class="twentyfive-perc">
+                                    <div class="title-of">
+                                        Type:
+                                    </div>
+                                    <div class="sub-text-of">
+                                        Responsive Web
+                                    </div>
+                                </div>
+                                <div class="twentyfive-perc">
+                                    <div class="title-of">
+                                        Apps:
+                                    </div>
+                                    <div class="sub-text-of">
+                                        Starz
+                                    </div>
+                                </div>
+                                <div class="twentyfive-perc">
+                                    <div class="title-of">
+                                        Deliverables:
+                                    </div>
+                                    <div class="sub-text-of">
+                                        Sketch &amp; .png Files
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-team">
+                                <div class="fifty-perc">
+                                    <div class="title-of">
+                                        Technology:
+                                    </div>
+                                    <div class="sub-text-of">
+                                        Sketch, Zeplin, Confluence &amp; Jira
+                                    </div>
+                                </div>
+                                <div class="fifty-perc">
+                                    <div class="title-of">
+                                        Team:
+                                    </div>
+                                    <div class="sub-text-of">
+                                        Laurie Wiebener &amp; Will Fulton
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="project-cons">
+                            <div class="big-type-cons">Challenge</div>
+                            <div class="overview-copy-cons">VerizonUp partn</div>
+                            <div class="big-type-cons">Solution</div>
+                            <div class="overview-copy-cons">Develop a design system centered around a single master file to be used as a staple source of truth &amp; simplify the design system structure.</div>
+                        </div>
+                        <div class="divider"></div>
                     </div>
                 </div>
                 <div id="project-3-title" class="project-list">
