@@ -305,7 +305,7 @@ P {
 
 #project-1-content {
   display: none;
-  background: #AAA9B7; }
+  background: #D4D2DD; }
 
 #starz-container {
   background-color: rgba(0, 0, 0, 0.9);
@@ -341,13 +341,12 @@ P {
       font-weight: 700;
       font-size: 30px;
       margin-left: 12%;
-      margin-top: -2px;
-      width: 74%;
-      padding: 1%;
-      border: 2px solid #FFFFFF; }
+      width: 76%;
+      padding: 1.6% 0; }
 
 #starz-proj-1 {
-  background-color: #AAA9B7; }
+  background-color: yellow;
+  color: #0A0624; }
 
 .project-list {
   width: 100%; }
@@ -355,9 +354,7 @@ P {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    color: #000000;
-    background-color: #FFFFFF;
-    border: 2px solid #FFFFFF;
+    background-color: yellow;
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -367,11 +364,10 @@ P {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-left: 12%;
-    width: 74%;
+    padding: 2.2% 12%;
+    width: 76%;
     font-size: 30px;
-    font-weight: 700;
-    padding: 1%; }
+    font-weight: 600; }
 
 .expand-unexpand {
   z-index: 1;
@@ -384,82 +380,94 @@ P {
   -webkit-justify-content: flex-start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  width: 30px;
-  height: 30px;
-  margin-right: 2%;
-  border: 3px solid #000;
-  border-radius: 100%; }
+  width: 24px;
+  height: 24px;
+  border: 2px solid #0A0624;
+  border-radius: 100%;
+  background-color: #0A0624; }
+  .expand-unexpand:hover {
+    background-color: grey;
+    border: 2px solid grey; }
   .expand-unexpand .plus-minus {
     display: inline-block;
-    width: 30px;
-    height: 30px;
-    background-image: url("../images/icons/plus-blk.png");
-    background-size: 60%;
+    width: 24px;
+    height: 24px;
+    background-image: url("../images/icons/plus.png");
+    background-size: 70%;
     background-repeat: no-repeat;
     background-position: center;
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg); }
-    .expand-unexpand .plus-minus:hover {
-      width: 30px;
-      height: 30px;
-      border-radius: 100%;
-      background-image: url("../images/icons/plus.png");
-      background-size: 60%;
-      background-repeat: no-repeat;
-      background-position: center;
-      background-color: #000000; }
+    transition: 1s all; }
 
 .rotate {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg); }
 
 .project-details {
-  width: 76.25%;
-  margin-left: 12%;
-  font-size: 20px; }
+  border-top: 18px solid white; }
 
 .project-team {
+  width: 76%;
+  border-bottom: 10px solid white;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  width: 100%; }
+  margin: auto;
+  background-color: white; }
   .project-team .twentyfive-perc {
-    width: 25%; }
+    width: 25%;
+    padding: 0 .5%; }
   .project-team .thirty-perc {
-    width: 33.333%; }
+    position: relative;
+    width: 33.32%;
+    padding: 0 .5%; }
+  .project-team .two-thirds {
+    width: 66.65%;
+    padding: 0 .5%; }
   .project-team .fifty-perc {
-    width: 50%; }
+    width: 50%;
+    padding: 0 .5%; }
   .project-team .title-of {
-    font-weight: 500;
-    padding: 1%;
-    border: 2px solid #E2E2E8;
-    color: white;
-    background-color: #0A0624; }
+    font-weight: 800;
+    letter-spacing: 2px;
+    padding: 8px 0;
+    color: black;
+    background-color: yellow; }
   .project-team .sub-text-of {
-    padding: 3.5% 1%;
-    border: 2px solid #E2E2E8;
+    font-size: 18px;
     line-height: 30px;
     background-color: white;
-    color: #0A0624; }
+    color: #0A0624;
+    padding-top: 10px; }
 
 .divider {
   width: 40%;
   margin-left: 30%;
-  height: 2px;
+  height: 4px;
   background-color: #FAF800;
-  margin-top: 6%;
-  margin-bottom: 6%; }
+  margin-top: 3%;
+  margin-bottom: 3%; }
+
+#project-2-content {
+  background-color: #FFC8C8; }
+  #project-2-content .title-of {
+    border: 2px solid #00259E;
+    color: white;
+    background-color: #003333; }
+  #project-2-content .sub-text-of {
+    border: 2px solid #FF3333;
+    color: #0A0624;
+    background-color: #00259E; }
+  #project-2-content .divider {
+    background-color: white; }
+  #project-2-content .project-cons {
+    background-color: #FF3333; }
+    #project-2-content .project-cons .big-type-cons {
+      color: #FAF800; }
 
 .project-cons {
-  margin-left: 12%;
-  padding: 8%;
-  width: 60%;
+  margin-left: 22%;
+  padding: 3%;
+  width: 50%;
   background-color: #0A0624; }
   .project-cons .big-type-cons {
     padding: 1%;
@@ -470,39 +478,46 @@ P {
     padding: 0 4% 4% 1%;
     font-size: 20px;
     line-height: 30px;
-    text-align: justify; }
+    text-align: justify;
+    margin: 3%; }
 
 .project-overview {
   width: 76%;
-  margin-left: 12%;
-  margin-top: 2%;
-  margin-bottom: 2%; }
+  margin-left: 12%; }
   .project-overview .big-type {
     font-size: 30px;
     font-weight: 600;
-    color: #0A0624;
-    width: 92%;
-    padding: 4% 4% 2% 4%;
-    border-bottom: 8px double  #FAF800;
-    background-color: #FFFFFF; }
+    color: white;
+    width: 100%;
+    border-bottom: 8px double  #FAF800; }
   .project-overview .overview-copy {
-    padding: 2% 4% 4% 4%;
+    font-size: 20px;
+    color: #0A0624;
+    line-height: 30px;
+    text-align: justify; }
+  .project-overview .overview-copy-sub {
+    padding: 2% 4% 0 4%;
     font-size: 20px;
     color: #0A0624;
     line-height: 30px;
     background-color: #E2E2E8;
     text-align: justify; }
+  .project-overview .bold-overview {
+    font-weight: 600; }
 
 .process-steps {
   color: #0A0624;
   width: 76%;
-  margin-left: 12%; }
+  margin-left: 12%;
+  padding-top: 5%;
+  margin-bottom: 2%;
+  border-bottom: 2px #0A0624 solid; }
   .process-steps .step-copy {
-    padding: 4%;
+    padding: 2%;
     width: 100%;
     font-weight: 600;
     letter-spacing: 1.2px;
-    font-size: 24px; }
+    font-size: 28px; }
 
 .process-step-description {
   width: 76%;
@@ -525,6 +540,13 @@ P {
   width: 56%;
   margin-left: 22%; }
   .single-starz-img-wide img {
+    width: 100%; }
+
+.single-starz-img-full {
+  padding: 5% 0 7% 0;
+  width: 76%;
+  margin-left: 12%; }
+  .single-starz-img-full img {
     width: 100%; }
 
 .single-panel {
