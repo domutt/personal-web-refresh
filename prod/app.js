@@ -1,26 +1,58 @@
-
+//
+$(window).on('load', function(){
+    $("#loader").fadeOut(function(){
+        // $(".me").fadeIn();
+        // $(".what").delay(1000).fadeIn();
+        $(".fast-inner").delay(600).fadeIn(1000);
+        $(".welcome-inner").fadeIn(800);
+    });
+});
 $(document).ready( function() {
     console.log("Hello My Man!");
-    $("#menu-container").attr("style", "display:none;");
 
+    $("#main-content").bind('mousewheel', function(event) {
+        if (event.originalEvent.wheelDelta >= 0) {
+            console.log('Scroll UP');
+        }
+        else {
+            console.log('Scroll DOWN');
+        }
+    });
+    $( "#main-content" ).scroll(function() {
+        // $( "#log" ).append( "<div>Handler for .scroll() called.</div>" );
+    });
     $( "#left-button" ).click(function() {
+        $("#project-1-content").slideUp("slow", function (){
+            $( "#project-1-button" ).removeClass('rotate');
+        });
+        $("#project-2-content").slideUp("slow", function (){
+            $( "#project-2-button" ).removeClass('rotate');
+        });
+        $( "#splash-container").fadeOut(500);
         $( "#left-button" ).css({"box-shadow" : "2px 1.5px #888988"});
         $( "#right-button" ).removeAttr("style");
-        $("#menu-container").hide();
+        $("#hide-menu").hide();
         $("#design-portfolio").hide();
         $("#ui-portfolio").hide();
         $("#gd-menu").delay(1000).animate({"width": "50%"});
         $("#ui-menu").delay(1000).animate({"width": "50%"});
-        $("#about-container").fadeIn("slow");
+        $("#about-container").scrollTop(0).fadeIn("slow");
         $("#small-logo").fadeOut();
     });
 
     $( "#right-button" ).click(function() {
+        $("#project-1-content").slideUp("slow", function (){
+            $( "#project-1-button" ).removeClass('rotate');
+        });
+        $("#project-2-content").slideUp("slow", function (){
+            $( "#project-2-button" ).removeClass('rotate');
+        });
+        $( "#splash-container").fadeOut(500);
         $("#about-container").hide();
         $("#small-logo").fadeIn();
         $( "#right-button" ).css({"box-shadow" : "-2px 1.5px #888988"});
         $( "#left-button" ).removeAttr("style");
-        $( "#menu-container" ).fadeIn();
+        $( "#hide-menu" ).fadeIn();
         $("#gd-menu").animate({"width": "50%", "z-index": "999"},500 );
         $("#ui-menu").animate({"width": "50%" , "z-index": "999"}, 500);
         $("#design-portfolio").hide();
@@ -41,12 +73,16 @@ $(document).ready( function() {
         $("#small-logo").fadeOut();
     });
     $("#project-1-button").click( function (){
-        $("#project-1-content").slideToggle("slow", function(){
-
+        $("#project-1-content").slideToggle("slow");
+        // $("#starz-proj-1").animate({"top": "0px"},1000);
+        $( "#project-1-button" ).toggleClass('rotate');
+        $("#project-2-content").slideUp("slow", function (){
+            $( "#project-2-button" ).removeClass('rotate');
         });
-        $( "#project-1-button" ).toggleClass('rotate', function(){});
     });
     $("#project-2-button").click( function (){
+        $("#project-2-content").slideToggle("slow");
+        $( "#project-2-button" ).toggleClass('rotate');
         $("#project-1-content").slideUp("slow", function (){
             $( "#project-1-button" ).removeClass('rotate');
         });

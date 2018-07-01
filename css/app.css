@@ -64,7 +64,11 @@ P {
       -ms-flex-align: center;
           align-items: center; }
   #nav-logo #logo {
-    margin-left: 7px; }
+    margin-top: 10px;
+    width: 60px;
+    height: 60px; }
+    #nav-logo #logo img {
+      width: 100%; }
 
 #nav-buttons {
   font-size: 18px;
@@ -96,14 +100,15 @@ P {
     #nav-buttons-container #left-button:hover {
       box-shadow: 2px 1.5px #030316; }
   #nav-buttons-container #right-button {
-    margin-right: 18px;
+    margin-right: 10px;
     padding-right: 18px; }
     #nav-buttons-container #right-button:hover {
       box-shadow: -2px 1.5px #030316; }
   #nav-buttons-container .main-buttons {
     padding: 8px; }
 
-#menu-container {
+#hide-menu {
+  display: none;
   position: fixed;
   left: 0;
   right: 0;
@@ -113,7 +118,9 @@ P {
   /* Need a specific value to work */
   width: 100%;
   height: auto;
-  overflow: hidden;
+  overflow: hidden; }
+
+#menu-container {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -137,7 +144,7 @@ P {
             flex-direction: column;
     text-align: center; }
     #menu-container .menu-options .skill-title {
-      font-size: 200px;
+      font-size: 120px;
       font-weight: 700; }
       #menu-container .menu-options .skill-title #gd-outline {
         padding: 20px; }
@@ -187,12 +194,88 @@ P {
     #ui-menu:hover span {
       border: 8px #FFFFFF double; }
 
+#splash-container {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/about-bg-center.png");
+  background-color: #D9F1FF;
+  background-size: 1440px;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply; }
+
+.fast-about-me {
+  position: fixed;
+  text-align: left;
+  height: 100vh;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .fast-about-me .fast-inner {
+    width: 80%;
+    margin-left: 10%;
+    font-size: 60px;
+    font-weight: 800;
+    display: none; }
+
+.welcome-message {
+  position: fixed;
+  width: 100%;
+  text-align: left;
+  height: 100vh;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  transition-delay: .5s; }
+  .welcome-message .welcome-inner {
+    display: none;
+    width: 80%;
+    height: auto;
+    font-size: 200px;
+    font-weight: 800;
+    color: white;
+    margin-top: -200px; }
+
 #about-container {
   display: none; }
 
+#about-bg {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../images/about-bg-center.png");
+  background-color: #daf0e6;
+  background-size: 1440px;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  margin: auto; }
+
 .about-inner {
+  z-index: 1;
   width: 90%;
-  margin-top: 45px;
+  padding-top: 70px;
   margin-left: 5%;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -253,6 +336,7 @@ P {
 
 #footer-container {
   position: fixed;
+  z-index: 4000;
   bottom: 0;
   left: 0;
   right: 0;
@@ -290,6 +374,89 @@ P {
     width: 70px; }
     #footer-container #small-logo img {
       width: 100%; }
+
+#loader {
+  z-index: 9999;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  background-color: white; }
+
+.loader-animation {
+  color: #000000;
+  font-size: 90px;
+  text-indent: -9999em;
+  overflow: hidden;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  margin: 72px auto;
+  position: relative;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation: load6 1.7s infinite ease, round 1.7s infinite ease;
+  animation: load6 1.7s infinite ease, round 1.7s infinite ease; }
+
+@-webkit-keyframes load6 {
+  0% {
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em; }
+  5%,
+  95% {
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em; }
+  10%,
+  59% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.087em -0.825em 0 -0.42em, -0.173em -0.812em 0 -0.44em, -0.256em -0.789em 0 -0.46em, -0.297em -0.775em 0 -0.477em; }
+  20% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em, -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em, -0.749em -0.34em 0 -0.477em; }
+  38% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em, -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em, -0.82em -0.09em 0 -0.477em; }
+  100% {
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em; } }
+
+@keyframes load6 {
+  0% {
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em; }
+  5%,
+  95% {
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em; }
+  10%,
+  59% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.087em -0.825em 0 -0.42em, -0.173em -0.812em 0 -0.44em, -0.256em -0.789em 0 -0.46em, -0.297em -0.775em 0 -0.477em; }
+  20% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em, -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em, -0.749em -0.34em 0 -0.477em; }
+  38% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em, -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em, -0.82em -0.09em 0 -0.477em; }
+  100% {
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em; } }
+
+@-webkit-keyframes round {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+@keyframes round {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
 
 #design-portfolio {
   width: 100%;
@@ -448,6 +615,7 @@ P {
   margin-bottom: 3%; }
 
 #project-2-content {
+  display: none;
   background-color: #FFC8C8; }
   #project-2-content .title-of {
     border: 2px solid #00259E;
@@ -658,7 +826,9 @@ P {
     -webkit-justify-content: space-around;
         -ms-flex-pack: distribute;
             justify-content: space-around;
-    width: 46%; }
+    width: 46%;
+    margin-top: 4%;
+    margin-bottom: 2%; }
   #main-content .image-holder {
     width: 100%;
     height: auto; }
@@ -675,10 +845,11 @@ P {
     -webkit-flex-direction: row;
         -ms-flex-direction: row;
             flex-direction: row;
-    width: 60%; }
+    width: 80%; }
     #main-content .two-up .two-pane-right {
-      width: 50%;
-      height: 50%; }
+      width: 44%;
+      margin-top: 2%;
+      margin-bottom: 2%; }
       #main-content .two-up .two-pane-right img {
         width: 100%;
         height: auto; }
@@ -696,26 +867,5 @@ P {
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column; }
-
-#background {
-  z-index: -9999;
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  display: block;
-  width: 100%;
-  max-width: 1440px;
-  height: 100vh;
-  margin: auto; }
-  #background #base-bg {
-    background-image: url("../images/about-bg-center.png");
-    background-color: #daf0e6;
-    background-size: 1440px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-blend-mode: multiply;
-    margin: auto;
-    height: 100%; }
 
 /*# sourceMappingURL=../maps/main.css.map */

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>DM Portfolio</title>
+    <title>Dominic Muttel</title>
     <meta name="description" content="Professional works created and developed by Dominic Muttel">
     <meta name="author" content="Dominic Muttel">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -26,13 +26,14 @@
 
 </head>
 <body>
-    <div id="background">
-        <div id="base-bg"></div>
+    <div id="loader">
+        <div class="loader-animation"></div>
     </div>
     <div id="nav-container">
         <div id="nav-logo">
             <div id="logo">
-                DOMINIC MUTTEL
+                <img src="../images/domu-small.png" alt="Domu Logo">
+                <!-- DOMINIC MUTTEL -->
             </div>
         </div>
         <div id="nav-buttons">
@@ -46,31 +47,53 @@
             </div>
         </div>
     </div>
-    <div id="menu-container">
-        <div class="menu-options" id="gd-menu">
-            <div class="skill-title">
-                <span id="gd-outline">GD</span>
+    <div id="hide-menu">
+        <div id="menu-container">
+            <div class="menu-options" id="gd-menu">
+                <div class="skill-title">
+                    <span id="gd-outline">GD</span>
+                </div>
+            </div>
+
+            <div class="menu-options" id="ui-menu">
+                <div class="skill-title">
+                    <span id="ui-outline">UI</span>
+                </div>
             </div>
         </div>
 
-        <div class="menu-options" id="ui-menu">
-            <div class="skill-title">
-                <span id="ui-outline">UI</span>
-            </div>
-        </div>
     </div>
     <div id="splash-container">
+        <div class="welcome-message">
+            <div class="welcome-inner">
+                Hello,
 
+            </div>
+        </div>
+        <div class="fast-about-me">
+            <div class="fast-inner">
+                <span class="me">
+                     I'm Dominic.
+                </span>
+                <span class="what">
+                    A multidisciplinary designer with passion for web.
+
+                </span>
+            </div>
+        </div>
+        <div class="splash-bg">
+
+        </div>
     </div>
     <div id="main-content">
         <div id="design-portfolio">
             <div class="portfolio-header">
                 <h1>Graphic Design</h1>
-                <p>A collection of graphics and other design projects</p>
+                <!-- <p>Some logos and identies</p> -->
             </div>
             <div class="portfolio-content">
                 <h1>Logo Treatments</h1>
-                <h2>Honey Fox</h2>
+                <h2>Honey Fox Company</h2>
                 <div class="one-up">
                     <div class="image-holder">
                         <img src="images/gd_projects/honey-fox.png" alt="">
@@ -82,20 +105,6 @@
                     </div>
                     <div class="two-pane-right">
                         <img src="images/gd_projects/honey-fox-label.png" alt="">
-                    </div>
-                </div>
-                <h2>Colorado Structural Repair</h2>
-                <div class="one-up">
-                    <div class="image-holder">
-                        <img src="images/gd_projects/csr-main-logo.png" alt="">
-                    </div>
-                </div>
-                <div class="two-up">
-                    <div class="two-pane-right">
-                        <img src="images/gd_projects/csr-truck-1.png" alt="">
-                    </div>
-                    <div class="two-pane-right">
-                        <img src="images/gd_projects/csr-identity.png" alt="">
                     </div>
                 </div>
                 <h2>Recuperatio 12</h2>
@@ -112,21 +121,21 @@
                         <img src="images/gd_projects/r12-book.png" alt="">
                     </div>
                 </div>
-                <h2>DOMU Concept</h2>
+                <h2>Colorado Structural Repair</h2>
                 <div class="one-up">
                     <div class="image-holder">
-                        <img src="images/gd_projects/domu-logo.png" alt="">
+                        <img src="images/gd_projects/csr-main-logo.png" alt="">
                     </div>
                 </div>
                 <div class="two-up">
                     <div class="two-pane-right">
-                        <img src="images/gd_projects/domu-print-media.png" alt="">
+                        <img src="images/gd_projects/csr-truck-1.png" alt="">
                     </div>
                     <div class="two-pane-right">
-                        <img src="images/gd_projects/domu-falling.png" alt="">
+                        <img src="images/gd_projects/csr-identity.png" alt="">
                     </div>
                 </div>
-                <h1>Community Engagement</h1>
+                <!-- <h1>Community Engagement</h1>
                 <div class="type-container">
                     <h2>This Makes Me Happy</h2>
                     <p>Is a cross-cultural study of what happiness means to us. We focused on the G.D.H. (Gross Domestic Happiness) of specific countries and examined what factors contributed to individual happiness.</p>
@@ -189,14 +198,14 @@
                         <div class="image-holder">
                             <img src="images/happy/tmmh.gif" alt="">
                         </div>
-                    </div>
+                    </div> -->
                 </div>
         </div>
         <div id="ui-portfolio">
 
             <div class="portfolio-header">
-                <h1>User Interface Design</h1>
-                <p>Case Studies</p>
+                <h1>UI/UX + Web</h1>
+                <!-- <p>Case Studies</p> -->
             </div>
 
             <div id="starz-container" class="portfolio-content">
@@ -276,9 +285,9 @@
                         <div class="divider"></div>
                         <div class="project-cons">
                             <div class="big-type-cons">Problem</div>
-                            <div class="overview-copy-cons">The disarray of the UI files was making it increasingly difficult to keep up with file maintenance &amp; updates. Finding the source of truth was time staking, &amp; upon discovery, it generally demanded updates before you could begin work.</div>
+                            <div class="overview-copy-cons">The UI file system was making it increasingly difficult to keep up with file maintenance / updates. Finding the source of truth was time staking &amp; it generally demanded updates before you could begin work.</div>
                             <div class="big-type-cons">Solution</div>
-                            <div class="overview-copy-cons">Develop a design system centered around a single master file to be used as a staple source of truth &amp; simplify the design system structure.</div>
+                            <div class="overview-copy-cons">Develop a design system centered around a single master file to be used as a staple source of truth &amp; simplify the design system structure making it easier for designers to create comps.</div>
                         </div>
                         <div class="divider"></div>
                         <div class="project-overview">
@@ -616,11 +625,12 @@
         </div>
     </div>
     <div id="about-container">
+        <div id="about-bg"></div>
         <div class="about-inner">
             <div id="profile-container">
                 <div id="profile-pic"></div>
             </div>
-            <div id="about-headline">UI Designer and half-stack dev with experience in visual art, branding, and graphic design. My interests rest in finding creative solutions that activate the user experience through beautiful interfaces.</div>
+            <div id="about-headline">UI/UX Designer and half-stack dev with experience in visual art, branding, and graphic design. My interests rest in finding creative solutions that activate the user experience through beautiful interfaces.</div>
 
             <div class="about-title">TECH</div>
             <div class="about-items">HTML/CSS/JS, JS Frameworks, Adobe CS, Sketch, Zeplin, Invision, Confluence/Jira, Trello</div>
@@ -637,7 +647,7 @@
                 </span>
             </div>
             <div id="my-logo">
-                <img src="../images/domu-small.png" alt="Domu Logo">
+                <!-- <img src="../images/domu-small.png" alt="Domu Logo"> -->
             </div>
         </div>
     </div>
@@ -648,7 +658,7 @@
         </div>
         <div>
             <div id="small-logo">
-                <img src="../images/domu-small.png" alt="Domu Logo">
+                <!-- <img src="../images/domu-small.png" alt="Domu Logo"> -->
             </div>
         </div>
         <div class="three-foot">

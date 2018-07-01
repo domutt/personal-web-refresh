@@ -1,9 +1,29 @@
 #about-container {
 	display: none;
+
+}
+#about-bg {
+	position: fixed;
+	z-index: -1;
+	top: 0;
+	right: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background-image: url("../images/about-bg-center.png");
+	background-color: #daf0e6;
+	background-size: 1440px;
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-blend-mode: multiply;
+	margin: auto;
+	// height: auto;
 }
 .about-inner {
+	z-index: 1;
 	width: 90%;
-	margin-top: 45px;
+	padding-top: 70px;
 	margin-left: 5%;
 	display: flex;
 	flex-direction: column;

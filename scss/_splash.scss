@@ -1,0 +1,63 @@
+#splash-container {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/about-bg-center.png");
+	background-color: $color-b;
+	background-size: 1440px;
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-blend-mode: multiply;
+    // background-color: black;
+}
+.fast-about-me {
+    position: fixed;
+    // margin-top: 40px;;
+    text-align: left;
+    // margin-left: 10%;
+    // visibility: hidden;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .fast-inner {
+        // display: none;
+        width: 80%;
+        margin-left: 10%;;
+        // height: 100%;;
+        font-size: 60px;
+        font-weight: 800;
+        display: none;
+        .me {
+        }
+        .what {
+            // display: none;
+        }
+    }
+
+}
+.welcome-message {
+    position: fixed;
+    // visibility: hidden;
+// margin: auto;
+    width: 100%;;;
+    text-align: left;
+    // margin: 10%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-delay: .5s;
+    .welcome-inner {
+        display: none;
+        width: 80%;
+        height: auto;;
+        font-size:200px;
+        font-weight: 800;
+        color: white;
+        margin-top: -200px;;
+    }
+}

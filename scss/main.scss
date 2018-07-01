@@ -4,26 +4,5 @@
 @import 'splash';
 @import 'about';
 @import 'footer';
+@import 'loading-page';
 @import 'work/work';
-#background {
-	z-index: -9999;
-	position: fixed;
-	top: 0;
-	right: 0;
-	left: 0;
-	display: block;
-	width: 100%;
-	max-width: 1440px;
-	height: 100vh;
-	margin: auto;
-	#base-bg {
-		background-image: url("../images/about-bg-center.png");
-		background-color: #daf0e6;
-		background-size: 1440px;
-		background-position: center;
-		background-repeat: no-repeat;
-		background-blend-mode: multiply;
-		margin: auto;
-		height: 100%;
-	}
-}
