@@ -28,6 +28,9 @@ $(document).ready( function() {
         $("#project-2-content").slideUp("slow", function (){
             $( "#project-2-button" ).removeClass('rotate');
         });
+        $("#super-1-content").slideUp("slow", function (){
+            $( "#super-1-button" ).removeClass('rotate');
+        });
         $( "#splash-container").fadeOut(500);
         $( "#left-button" ).css({"box-shadow" : "2px 1.5px #888988"});
         $( "#right-button" ).removeAttr("style");
@@ -46,6 +49,9 @@ $(document).ready( function() {
         });
         $("#project-2-content").slideUp("slow", function (){
             $( "#project-2-button" ).removeClass('rotate');
+        });
+        $("#super-1-content").slideUp("slow", function (){
+            $( "#super-1-button" ).removeClass('rotate');
         });
         $( "#splash-container").fadeOut(500);
         $("#about-container").hide();
@@ -79,6 +85,9 @@ $(document).ready( function() {
         $("#project-2-content").slideUp("slow", function (){
             $( "#project-2-button" ).removeClass('rotate');
         });
+        $("#super-1-content").slideUp("slow", function (){
+            $( "#super-1-button" ).removeClass('rotate');
+        });
     });
     $("#project-2-button").click( function (){
         $("#project-2-content").slideToggle("slow");
@@ -86,11 +95,24 @@ $(document).ready( function() {
         $("#project-1-content").slideUp("slow", function (){
             $( "#project-1-button" ).removeClass('rotate');
         });
-    });
-    $("#project-3-button").click( function (){
-        $("#project-1-content").slideUp("slow", function(){
-            $( "#project-1-button" ).removeClass('rotate');
-
+        $("#super-1-content").slideUp("slow", function (){
+            $( "#super-1-button" ).removeClass('rotate');
         });
     });
+    $("#super-1-button").click( function (){
+        $("#super-1-content").slideToggle("slow");
+        $( "#super-1-button" ).toggleClass('rotate');
+        $("#project-1-content").slideUp("slow", function (){
+            $( "#project-1-button" ).removeClass('rotate');
+        });
+        $("#project-2-content").slideUp("slow", function (){
+            $( "#project-2-button" ).removeClass('rotate');
+        });
+    });
+    // $("#project-3-button").click( function (){
+    //     $("#project-1-content").slideUp("slow", function(){
+    //         $( "#project-1-button" ).removeClass('rotate');
+    //
+    //     });
+    // });
 });

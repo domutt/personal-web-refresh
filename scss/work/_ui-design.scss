@@ -3,6 +3,7 @@
 	height: 100%;
 	padding: 0;
 	display: none;
+	border-bottom: 80px solid transparent;
 }
 #project-1-content {
 	display: none;
@@ -19,51 +20,54 @@
 		color: white;
 	}
 }
-#starz-container {
-	background-color: rgba(0,0,0,.9);
+.portfolio-content {
+	background-color: rgba(0,0,0,1);
 	color: $color-lightest;
 	width: 100%;
-	margin-bottom:80px;
-	.header {
-		padding-top: 4%;
-		width: 48%;
-		padding-bottom: 1%;
-		img {
-			width: 100%;
-			margin:auto;
-		}
-	}
-	.stz-three-screens {
-		width: 80%;
-		img {
-			width: 100%;
-		}
-	}
-	.about-starz {
-		width: 100%;
-		padding-top: 4%;
-		padding-bottom: 4%;
-		color: $color-darkest;
-		background-color: $color-lightest;
-		.about-company {
-			width: 76%;
-			margin: auto;
-			font-size: 20px;
-			line-height: 30px;
-			font-weight: 700;
-			text-align: justify;
-		}
-	}
-	.project-headline {
-		width: 100%;
-		.project-box {
-			font-weight: 700;
-			font-size: 30px;
-			margin-left: 12%;
-			width: 76%;
-			padding: 1.6% 0;
+	padding-bottom: 4%;
+	// margin-bottom:80px;
+}
 
-		}
+.header {
+	padding-top: 4%;
+	width: 48%;
+	padding-bottom: 1%;
+	img {
+		width: 100%;
+		margin:auto;
+	}
+}
+.stz-three-screens {
+	width: 80%;
+	margin-bottom: -7px;;
+	img {
+		width: 100%;
+	}
+}
+.about-starz {
+	width: 100%;
+	padding-top: 4%;
+	padding-bottom: 4%;
+	color: white;
+	background-color: black;
+	.about-company {
+		width: 76%;
+		margin: auto;
+		font-size: 20px;
+		line-height: 30px;
+		font-weight: 700;
+		text-align: justify;
+	}
+}
+.project-headline {
+	width: 100%;
+	.project-box {
+		font-weight: 700;
+		font-size: 30px;
+		margin-left: 12%;
+		width: 76%;
+		padding: 1.6% 0;
+
 	}
 }
 #starz-proj-1 {
@@ -435,6 +439,113 @@
 		}
 	}
 }
+#super-1-title {
+	.list-item {
+		background-color: #ff00ff;
+	}
+	.p-title {
+		color: white;
+	}
+}
 #supernova-container {
-	
+	background-color: white;
+	.header {
+		padding-top: 4%;
+		width: 80%;
+		padding-bottom: 2%;
+		img {
+			width: 100%;
+			margin:auto;
+		}
+	}
+	.stz-three-screens {
+		width: 45%;
+		margin-bottom: -6px;;
+		img {
+			width: 100%;
+		}
+	}
+	.about-starz {
+		color: black;
+		background-color: white;
+		.about-company {
+			width: 76%;
+			margin: auto;
+			font-size: 20px;
+			line-height: 30px;
+			font-weight: 700;
+			text-align: justify;
+		}
+	}
+}
+#super-1-content {
+	//  #FF3333 red
+	//  #EEEEEE lightest grey
+	//  #BCBCBC light grey
+	//  #D5D5D5 grey
+	//  #272727 dark grey
+	//  #0C0000 black
+	display: none;
+	background-color: #bcbcbc;
+	padding-bottom: 6%;
+	.title-of {
+		color: white;
+		background-color: #ff00ff;
+	}
+	.sub-text-of {
+		color: #0C0000;
+		background-color: white;
+	}
+	.divider {
+		background-color: white;
+	}
+	.project-cons {
+		background-color: black;
+		.big-type-cons {
+			color: #ff00ff;
+		}
+		.overview-copy-cons {
+			color: white ;
+		}
+	}
+	.project-overview {
+		.big-type {
+			color: black;
+			border-top: 8px double  #ff00ff;
+			border-bottom: 8px double  #ff00ff;
+		}
+		.overview-copy {
+			color: black;
+		}
+		.overview-copy-sub {
+			color: white;
+		}
+		.bold-overview {
+			color: white;
+		}
+	}
+	.process-steps {
+		color: white;
+		border-bottom: 2px #ff00ff dotted;
+		border-top: 3px black solid;
+		.step-copy {
+				color: white;
+			.number {
+				color: #ff00ff;
+			}
+		}
+	}
+	.process-step-description {
+		color: white;
+		.step-info {
+			.step-preface {
+				color: black;
+				font-weight: 600;
+			}
+		}
+	}
+	.image-caption {
+		color: yellow;
+	}
+
 }

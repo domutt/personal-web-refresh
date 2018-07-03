@@ -468,7 +468,8 @@ P {
   width: 100%;
   height: 100%;
   padding: 0;
-  display: none; }
+  display: none;
+  border-bottom: 80px solid transparent; }
 
 #project-1-content {
   display: none;
@@ -481,43 +482,48 @@ P {
 #project-2-title .p-title {
   color: white; }
 
-#starz-container {
-  background-color: rgba(0, 0, 0, 0.9);
+.portfolio-content {
+  background-color: black;
   color: #FFFFFF;
   width: 100%;
-  margin-bottom: 80px; }
-  #starz-container .header {
-    padding-top: 4%;
-    width: 48%;
-    padding-bottom: 1%; }
-    #starz-container .header img {
-      width: 100%;
-      margin: auto; }
-  #starz-container .stz-three-screens {
-    width: 80%; }
-    #starz-container .stz-three-screens img {
-      width: 100%; }
-  #starz-container .about-starz {
+  padding-bottom: 4%; }
+
+.header {
+  padding-top: 4%;
+  width: 48%;
+  padding-bottom: 1%; }
+  .header img {
     width: 100%;
-    padding-top: 4%;
-    padding-bottom: 4%;
-    color: #000000;
-    background-color: #FFFFFF; }
-    #starz-container .about-starz .about-company {
-      width: 76%;
-      margin: auto;
-      font-size: 20px;
-      line-height: 30px;
-      font-weight: 700;
-      text-align: justify; }
-  #starz-container .project-headline {
+    margin: auto; }
+
+.stz-three-screens {
+  width: 80%;
+  margin-bottom: -7px; }
+  .stz-three-screens img {
     width: 100%; }
-    #starz-container .project-headline .project-box {
-      font-weight: 700;
-      font-size: 30px;
-      margin-left: 12%;
-      width: 76%;
-      padding: 1.6% 0; }
+
+.about-starz {
+  width: 100%;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  color: white;
+  background-color: black; }
+  .about-starz .about-company {
+    width: 76%;
+    margin: auto;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 700;
+    text-align: justify; }
+
+.project-headline {
+  width: 100%; }
+  .project-headline .project-box {
+    font-weight: 700;
+    font-size: 30px;
+    margin-left: 12%;
+    width: 76%;
+    padding: 1.6% 0; }
 
 #starz-proj-1 {
   background-color: yellow;
@@ -861,6 +867,81 @@ P {
     color: #8C8A95; }
   .four-panel .four-starz-img img {
     width: 100%; }
+
+#super-1-title .list-item {
+  background-color: #ff00ff; }
+
+#super-1-title .p-title {
+  color: white; }
+
+#supernova-container {
+  background-color: white; }
+  #supernova-container .header {
+    padding-top: 4%;
+    width: 80%;
+    padding-bottom: 2%; }
+    #supernova-container .header img {
+      width: 100%;
+      margin: auto; }
+  #supernova-container .stz-three-screens {
+    width: 45%;
+    margin-bottom: -6px; }
+    #supernova-container .stz-three-screens img {
+      width: 100%; }
+  #supernova-container .about-starz {
+    color: black;
+    background-color: white; }
+    #supernova-container .about-starz .about-company {
+      width: 76%;
+      margin: auto;
+      font-size: 20px;
+      line-height: 30px;
+      font-weight: 700;
+      text-align: justify; }
+
+#super-1-content {
+  display: none;
+  background-color: #bcbcbc;
+  padding-bottom: 6%; }
+  #super-1-content .title-of {
+    color: white;
+    background-color: #ff00ff; }
+  #super-1-content .sub-text-of {
+    color: #0C0000;
+    background-color: white; }
+  #super-1-content .divider {
+    background-color: white; }
+  #super-1-content .project-cons {
+    background-color: black; }
+    #super-1-content .project-cons .big-type-cons {
+      color: #ff00ff; }
+    #super-1-content .project-cons .overview-copy-cons {
+      color: white; }
+  #super-1-content .project-overview .big-type {
+    color: black;
+    border-top: 8px double  #ff00ff;
+    border-bottom: 8px double  #ff00ff; }
+  #super-1-content .project-overview .overview-copy {
+    color: black; }
+  #super-1-content .project-overview .overview-copy-sub {
+    color: white; }
+  #super-1-content .project-overview .bold-overview {
+    color: white; }
+  #super-1-content .process-steps {
+    color: white;
+    border-bottom: 2px #ff00ff dotted;
+    border-top: 3px black solid; }
+    #super-1-content .process-steps .step-copy {
+      color: white; }
+      #super-1-content .process-steps .step-copy .number {
+        color: #ff00ff; }
+  #super-1-content .process-step-description {
+    color: white; }
+    #super-1-content .process-step-description .step-info .step-preface {
+      color: black;
+      font-weight: 600; }
+  #super-1-content .image-caption {
+    color: yellow; }
 
 #main-content {
   position: absolute;
