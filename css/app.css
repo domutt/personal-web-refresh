@@ -95,18 +95,18 @@ P {
           align-content: center;
   height: 80px; }
   #nav-buttons-container #left-button {
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.2);
     margin-left: 18px;
-    padding-left: 18px;
+    padding: 10px 18px;
     transition: .4s all; }
     #nav-buttons-container #left-button:hover {
       box-shadow: 2px 1.5px #030316;
       background-color: rgba(255, 255, 255, 0.8);
       transition: .4s all; }
   #nav-buttons-container #right-button {
-    background-color: rgba(255, 255, 255, 0.4);
-    margin-right: 10px;
-    padding-right: 18px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin-right: 18px;
+    padding: 10px 18px;
     transition: .4s all; }
     #nav-buttons-container #right-button:hover {
       box-shadow: -2px 1.5px #030316;
@@ -283,7 +283,7 @@ P {
 .about-inner {
   z-index: 1;
   width: 90%;
-  padding-top: 70px;
+  padding: 70px 0 40px 0;
   margin-left: 5%;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -363,21 +363,27 @@ P {
   max-width: 1440px;
   height: 70px;
   margin-top: 3%;
-  margin-bottom: 1%; }
+  margin-bottom: 0; }
   #footer-container .three-foot {
-    margin: 0 2.5%;
-    width: 40px;
-    height: 40px; }
+    margin: 0 18px; }
+    #footer-container .three-foot a {
+      color: black;
+      text-decoration: none; }
     #footer-container .three-foot .email-me {
-      width: 40px;
-      height: 40px;
-      background: url("../images/mail.png") no-repeat center;
-      background-size: 100%; }
+      background-color: rgba(255, 255, 255, 0.2);
+      padding: 10px 18px;
+      transition: .4s all; }
+      #footer-container .three-foot .email-me:hover {
+        box-shadow: 2px -1.5px #030316;
+        background-color: rgba(255, 255, 255, 0.8);
+        transition: .4s all; }
     #footer-container .three-foot .linkedin-me {
-      width: 40px;
-      height: 40px;
-      background: url("../images/linkedin.png") no-repeat center;
-      background-size: 100%; }
+      background-color: rgba(255, 255, 255, 0.2);
+      padding: 10px 18px; }
+      #footer-container .three-foot .linkedin-me:hover {
+        box-shadow: -2px -1.5px #030316;
+        background-color: rgba(255, 255, 255, 0.8);
+        transition: .4s all; }
   #footer-container #small-logo {
     width: 70px; }
     #footer-container #small-logo img {
@@ -471,13 +477,15 @@ P {
   height: 100%;
   padding: 0;
   display: none; }
+  #design-portfolio .portfolio-content {
+    background-color: transparent; }
 
 #ui-portfolio {
   width: 100%;
   height: 100%;
   padding: 0;
   display: none;
-  border-bottom: 80px solid transparent; }
+  border-bottom: 14px solid white; }
 
 #project-1-content {
   display: none;
@@ -899,8 +907,9 @@ P {
 
 #super-1-title .list-item {
   background-color: black; }
-  #super-1-title .list-item:hover {
-    background-color: #ff00ff; }
+
+#super-1-title:hover {
+  background-color: #ff00ff; }
 
 #super-1-title .p-title {
   color: white; }

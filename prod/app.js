@@ -1,21 +1,16 @@
 //
 $(window).on('load', function(){
     $("#loader").fadeOut(function(){
-        // $(".me").fadeIn();
-        // $(".what").delay(1000).fadeIn();
         $(".fast-inner").delay(600).fadeIn(1000);
         $(".welcome-inner").fadeIn(800);
     });
 });
 $(document).ready( function() {
-    console.log("Hello My Man!");
 
     $("#main-content").bind('mousewheel', function(event) {
         if (event.originalEvent.wheelDelta >= 0) {
-            console.log('Scroll UP');
         }
         else {
-            console.log('Scroll DOWN');
         }
     });
     $( "#main-content" ).scroll(function() {
@@ -108,7 +103,6 @@ $(document).ready( function() {
         // $(this).scrollTop(0);
         $("#logo").fadeOut();
         // $('html,body').animate({scrollTop: $(this).offset().top}, 800);
-        console.log($(this).offset().top);
         $("#project-2-content").slideToggle("slow", function(){
             if ($("#starz-proj-2").is(":visible")) {
                 $("html, body").animate({

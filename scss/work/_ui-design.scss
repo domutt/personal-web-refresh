@@ -3,7 +3,7 @@
 	height: 100%;
 	padding: 0;
 	display: none;
-	border-bottom: 80px solid transparent;
+	border-bottom: 14px solid white;
 }
 #project-1-content {
 	display: none;
@@ -481,9 +481,9 @@
 #super-1-title {
 	.list-item {
 		background-color: black;
-		&:hover {
-			background-color: #ff00ff;
-		}
+	}
+	&:hover {
+		background-color: #ff00ff;
 	}
 	.p-title {
 		color: white;
