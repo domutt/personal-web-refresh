@@ -49,17 +49,25 @@
     align-content: center;
     height: $nav-height;
 	#left-button {
+        background-color: rgba(255, 255, 255, .4);
 		margin-left: 18px;
 		padding-left: 18px;
+        transition: .4s all;
     	&:hover{
     		box-shadow: 2px 1.5px   $color-darker;
+            background-color: rgba(255, 255, 255, .8);
+            transition: .4s all;
     	}
 	}
 	#right-button {
+        background-color: rgba(255, 255, 255, .4);
 		margin-right: 10px;
 		padding-right: 18px;
+        transition: .4s all;
 		&:hover{
 			box-shadow: -2px 1.5px  $color-darker;
+            background-color: rgba(255, 255, 255, .8);
+            transition: .4s all;
 		}
 	}
 	.main-buttons {
@@ -91,7 +99,7 @@
 		flex-direction: column;
 		text-align: center;
 		.skill-title {
-			font-size: 120px;
+			font-size: 200px;
 			font-weight: 700;
 			#gd-outline {
 				padding: 20px;
@@ -105,11 +113,11 @@
 #gd-menu{
 	width: 50%;
 	background-image: url("../images/about-bg.png");
+    background-size: 1440px;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
 	color: $color-r;
-	background-size: 1440px;
-	background-position: right;
-	background-repeat: no-repeat;
-	background-blend-mode: multiply;
 	span {
 		border: 8px $color-r double;
 	}

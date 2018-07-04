@@ -95,15 +95,23 @@ P {
           align-content: center;
   height: 80px; }
   #nav-buttons-container #left-button {
+    background-color: rgba(255, 255, 255, 0.4);
     margin-left: 18px;
-    padding-left: 18px; }
+    padding-left: 18px;
+    transition: .4s all; }
     #nav-buttons-container #left-button:hover {
-      box-shadow: 2px 1.5px #030316; }
+      box-shadow: 2px 1.5px #030316;
+      background-color: rgba(255, 255, 255, 0.8);
+      transition: .4s all; }
   #nav-buttons-container #right-button {
+    background-color: rgba(255, 255, 255, 0.4);
     margin-right: 10px;
-    padding-right: 18px; }
+    padding-right: 18px;
+    transition: .4s all; }
     #nav-buttons-container #right-button:hover {
-      box-shadow: -2px 1.5px #030316; }
+      box-shadow: -2px 1.5px #030316;
+      background-color: rgba(255, 255, 255, 0.8);
+      transition: .4s all; }
   #nav-buttons-container .main-buttons {
     padding: 8px; }
 
@@ -144,7 +152,7 @@ P {
             flex-direction: column;
     text-align: center; }
     #menu-container .menu-options .skill-title {
-      font-size: 120px;
+      font-size: 200px;
       font-weight: 700; }
       #menu-container .menu-options .skill-title #gd-outline {
         padding: 20px; }
@@ -154,11 +162,11 @@ P {
 #gd-menu {
   width: 50%;
   background-image: url("../images/about-bg.png");
-  color: #FFDEFD;
   background-size: 1440px;
   background-position: right;
   background-repeat: no-repeat;
-  background-blend-mode: multiply; }
+  background-blend-mode: multiply;
+  color: #FFDEFD; }
   #gd-menu span {
     border: 8px #FFDEFD double; }
   #gd-menu:hover {
@@ -476,12 +484,6 @@ P {
   background: #ABA8B8;
   padding-bottom: 6%; }
 
-#project-2-title .list-item {
-  background-color: #FF3333; }
-
-#project-2-title .p-title {
-  color: white; }
-
 .portfolio-content {
   background-color: black;
   color: #FFFFFF;
@@ -526,16 +528,26 @@ P {
     padding: 1.6% 0; }
 
 #starz-proj-1 {
-  background-color: yellow;
+  background-color: white;
   color: #0A0624; }
+  #starz-proj-1:hover {
+    background-color: yellow;
+    color: #0A0624; }
+
+#starz-proj-2 {
+  background-color: white;
+  color: #0A0624; }
+  #starz-proj-2:hover {
+    background-color: #FF3333;
+    color: #0A0624; }
 
 .project-list {
-  width: 100%; }
+  width: 94%; }
   .project-list .list-item {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    background-color: yellow;
+    background-color: white;
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -549,6 +561,15 @@ P {
     width: 76%;
     font-size: 30px;
     font-weight: 600; }
+    .project-list .list-item .plus-minus {
+      display: inline-block;
+      width: 32px;
+      height: 32px;
+      background-image: url("../images/icons/plus-blk.png");
+      background-size: 70%;
+      background-repeat: no-repeat;
+      background-position: center;
+      transition: 1s all; }
 
 .expand-unexpand {
   z-index: 1;
@@ -561,18 +582,12 @@ P {
   -webkit-justify-content: flex-start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  width: 24px;
-  height: 24px;
-  border: 2px solid #0A0624;
-  border-radius: 100%;
-  background-color: #0A0624; }
-  .expand-unexpand:hover {
-    background-color: grey;
-    border: 2px solid grey; }
+  width: 32px;
+  height: 32px; }
   .expand-unexpand .plus-minus {
     display: inline-block;
-    width: 24px;
-    height: 24px;
+    width: 32px;
+    height: 32px;
     background-image: url("../images/icons/plus.png");
     background-size: 70%;
     background-repeat: no-repeat;
@@ -868,11 +883,37 @@ P {
   .four-panel .four-starz-img img {
     width: 100%; }
 
+.video-proj {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  padding: -10px 0;
+  overflow: hidden; }
+  .video-proj video {
+    width: 100%;
+    margin: -2.3% 0; }
+
 #super-1-title .list-item {
-  background-color: #ff00ff; }
+  background-color: black; }
+  #super-1-title .list-item:hover {
+    background-color: #ff00ff; }
 
 #super-1-title .p-title {
   color: white; }
+
+#super-1-title .plus-minus {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background-image: url("../images/icons/plus.png");
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: 1s all; }
 
 #supernova-container {
   background-color: white; }

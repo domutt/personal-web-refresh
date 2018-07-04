@@ -12,14 +12,14 @@
 	// #AAA9B7;
 	padding-bottom: 6%;
 }
-#project-2-title {
-	.list-item {
-		background-color: #FF3333;
-	}
-	.p-title {
-		color: white;
-	}
-}
+// #project-2-title {
+// 	.list-item {
+// 		background-color: #FF3333;
+// 	}
+// 	.p-title {
+// 		color: white;
+// 	}
+// }
 .portfolio-content {
 	background-color: rgba(0,0,0,1);
 	color: $color-lightest;
@@ -71,20 +71,46 @@
 	}
 }
 #starz-proj-1 {
-	background-color: yellow;
+	background-color: white;
 	color: #0A0624;
+	&:hover {
+		background-color: yellow;
+		color: #0A0624;
+	}
 }
+#starz-proj-2 {
+	background-color: white;
+	color: #0A0624;
+	&:hover {
+		background-color: #FF3333;
+		color: #0A0624;
+	}
+}
+
+
 .project-list {
-	width: 100%;
+	width: 94%;
 	.list-item {
 		display: flex;
-		background-color: yellow;        justify-content: space-between;
+		background-color: white;
+		justify-content: space-between;
 		flex-direction: row;
 		align-items: center;
 		padding: 2.2% 12%;
+		// margin: 0 4%;
 		width: 76%;
 		font-size: 30px;
 		font-weight: 600;
+		.plus-minus {
+			display: inline-block;
+			width: 32px;;;
+			height: 32px;
+			background-image: url("../images/icons/plus-blk.png");
+			background-size: 70%;
+			background-repeat: no-repeat;
+			background-position: center;
+			transition: 1s all;
+		}
 	}
 }
 .expand-unexpand {
@@ -92,19 +118,19 @@
 	display: flex;
 	align-items: center;
 	justify-content: flex-start;
-	width: 24px;
-	height: 24px;
-	border: 2px solid #0A0624;
-	border-radius: 100%;
-	background-color: #0A0624;
+	width: 32px;
+	height: 32px;
+	// border: 2px solid #0A0624;
+	// border-radius: 100%;
+	// background-color: #0A0624;
 	&:hover {
-		background-color: grey;
-		border: 2px solid grey;
+		// background-color: grey;
+		// border: 2px solid grey;
 	}
 	.plus-minus {
 		display: inline-block;
-		width: 24px;;;
-		height: 24px;
+		width: 32px;;;
+		height: 32px;
 		background-image: url("../images/icons/plus.png");
 		background-size: 70%;
 		background-repeat: no-repeat;
@@ -439,12 +465,38 @@
 		}
 	}
 }
+.video-proj {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	padding: -10px 0;
+	overflow: hidden;
+	video {
+		width: 100%;
+		// height: 90%;
+		margin: -2.3% 0;
+	}
+
+}
 #super-1-title {
 	.list-item {
-		background-color: #ff00ff;
+		background-color: black;
+		&:hover {
+			background-color: #ff00ff;
+		}
 	}
 	.p-title {
 		color: white;
+	}
+	.plus-minus {
+		display: inline-block;
+		width: 32px;;;
+		height: 32px;
+		background-image: url("../images/icons/plus.png");
+		background-size: 70%;
+		background-repeat: no-repeat;
+		background-position: center;
+		transition: 1s all;
 	}
 }
 #supernova-container {

@@ -22,6 +22,7 @@ $(document).ready( function() {
         // $( "#log" ).append( "<div>Handler for .scroll() called.</div>" );
     });
     $( "#left-button" ).click(function() {
+        $("#logo").fadeIn();
         $("#project-1-content").slideUp("slow", function (){
             $( "#project-1-button" ).removeClass('rotate');
         });
@@ -44,6 +45,7 @@ $(document).ready( function() {
     });
 
     $( "#right-button" ).click(function() {
+        $("#logo").fadeIn();
         $("#project-1-content").slideUp("slow", function (){
             $( "#project-1-button" ).removeClass('rotate');
         });
@@ -78,37 +80,78 @@ $(document).ready( function() {
         $("#ui-portfolio").delay(480).fadeIn("fast");
         $("#small-logo").fadeOut();
     });
-    $("#project-1-button").click( function (){
-        $("#project-1-content").slideToggle("slow");
+
+
+
+    $("#starz-proj-1").click( function (){
+        $("#logo").fadeOut();
+        // $("#project-1-title").scrollTop();
+            // console.log($(this).offset().top);
+        $("#project-1-content").slideToggle("slow", function(){
+            if ($("#starz-proj-1").is(":visible")) {
+                $("html, body").animate({
+                    scrollTop: $("#starz-proj-1").offset().top}, 800);
+
+            }
+            $( "#project-1-button" ).toggleClass('rotate');
+            $("#project-2-content").slideUp("slow", function (){
+                $( "#project-2-button" ).removeClass('rotate');
+            });
+            $("#super-1-content").slideUp("slow", function (){
+                $( "#super-1-button" ).removeClass('rotate');
+            });
+
+        });
         // $("#starz-proj-1").animate({"top": "0px"},1000);
-        $( "#project-1-button" ).toggleClass('rotate');
-        $("#project-2-content").slideUp("slow", function (){
-            $( "#project-2-button" ).removeClass('rotate');
-        });
-        $("#super-1-content").slideUp("slow", function (){
-            $( "#super-1-button" ).removeClass('rotate');
+    });
+    $("#starz-proj-2").click( function (){
+        // $(this).scrollTop(0);
+        $("#logo").fadeOut();
+        // $('html,body').animate({scrollTop: $(this).offset().top}, 800);
+        console.log($(this).offset().top);
+        $("#project-2-content").slideToggle("slow", function(){
+            if ($("#starz-proj-2").is(":visible")) {
+                $("html, body").animate({
+                    scrollTop: $("#starz-proj-2").offset().top}, 800);
+
+            }
+            $( "#project-2-button" ).toggleClass('rotate');
+            $("#project-1-content").slideUp("slow", function (){
+                $( "#project-1-button" ).removeClass('rotate');
+            });
+            $("#super-1-content").slideUp("slow", function (){
+                $( "#super-1-button" ).removeClass('rotate');
+            });
+
         });
     });
-    $("#project-2-button").click( function (){
-        $("#project-2-content").slideToggle("slow");
-        $( "#project-2-button" ).toggleClass('rotate');
-        $("#project-1-content").slideUp("slow", function (){
-            $( "#project-1-button" ).removeClass('rotate');
-        });
-        $("#super-1-content").slideUp("slow", function (){
-            $( "#super-1-button" ).removeClass('rotate');
-        });
-    });
-    $("#super-1-button").click( function (){
+    $("#super-proj-1").click( function (){
+        $("#logo").fadeOut();
+        $('html,body').animate({scrollTop: $(this).offset().top}, 800);
+        // $(this).scrollTop(0);
         $("#super-1-content").slideToggle("slow");
         $( "#super-1-button" ).toggleClass('rotate');
         $("#project-1-content").slideUp("slow", function (){
+
             $( "#project-1-button" ).removeClass('rotate');
         });
         $("#project-2-content").slideUp("slow", function (){
             $( "#project-2-button" ).removeClass('rotate');
         });
     });
+    // $(function() {
+    	// $( ".project-list" ).accordion({
+    	// 	heightStyle: "content",
+    	// 	collapsible: true,
+    	// 	active: false,
+    	// 	activate: function( event, ui ) {
+    	// 		if(!$.isEmptyObject(ui.newHeader.offset())) {
+    	// 			$('html:not(:animated), body:not(:animated)').animate({ scrollTop: ui.newHeader.offset().top }, 'slow');
+    	// 		}
+    	// 	}
+    	// });
+    // });
+
     // $("#project-3-button").click( function (){
     //     $("#project-1-content").slideUp("slow", function(){
     //         $( "#project-1-button" ).removeClass('rotate');
