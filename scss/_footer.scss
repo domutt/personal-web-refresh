@@ -53,9 +53,28 @@
 		}
 	}
 	#small-logo {
-		width: 70px;;
+		display: none;
+		width: 18px;;
+		animation: bounce 1s infinite alternate;
+		-webkit-animation: bounce 1s infinite alternate;
 		img {
 			width: 100%;
 		}
 	}
+}
+@keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-12px);
+  }
+}
+@-webkit-keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-12px);
+  }
 }

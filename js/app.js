@@ -8,16 +8,16 @@ $(window).on('load', function(){
 $(document).ready( function() {
 
     $("#main-content").bind('mousewheel', function(event) {
-        if (event.originalEvent.wheelDelta >= 0) {
+        if (event.originalEvent.wheelDelta >= 10) {
+            // $("#small-logo").fadeIn();
         }
         else {
+            $("#small-logo").fadeOut();
         }
     });
-    $( "#main-content" ).scroll(function() {
-        // $( "#log" ).append( "<div>Handler for .scroll() called.</div>" );
-    });
     $( "#left-button" ).click(function() {
-        $("#logo").fadeIn();
+        $("#small-logo").fadeOut();
+        // $("#logo").fadeIn();
         $("#project-1-content").slideUp("slow", function (){
             $( "#project-1-button" ).removeClass('rotate');
         });
@@ -36,11 +36,12 @@ $(document).ready( function() {
         $("#gd-menu").delay(1000).animate({"width": "50%"});
         $("#ui-menu").delay(1000).animate({"width": "50%"});
         $("#about-container").scrollTop(0).fadeIn("slow");
-        $("#small-logo").fadeOut();
+        // $("#small-logo").fadeOut();
     });
 
     $( "#right-button" ).click(function() {
-        $("#logo").fadeIn();
+        $("#small-logo").fadeOut();
+        // $("#logo").fadeIn();
         $("#project-1-content").slideUp("slow", function (){
             $( "#project-1-button" ).removeClass('rotate');
         });
@@ -52,7 +53,7 @@ $(document).ready( function() {
         });
         $( "#splash-container").fadeOut(500);
         $("#about-container").hide();
-        $("#small-logo").fadeIn();
+        // $("#small-logo").fadeOut();
         $( "#right-button" ).css({"box-shadow" : "-2px 1.5px #888988"});
         $( "#left-button" ).removeAttr("style");
         $( "#hide-menu" ).fadeIn();
@@ -64,16 +65,18 @@ $(document).ready( function() {
         $("#gd-menu").removeAttr("style");
     });
     $("#gd-menu").click(function () {
+        $("#small-logo").fadeIn();
         $("#ui-menu").animate({"width": "0%", "z-index": "0"}, 500).removeAttr();
         $("#gd-menu").animate({"width": "100%", "z-index": "999"}, 500).attr("style", "background-image: url('../images/about-bg.png'); background-color:  #FFDEFD; color: #FFFFFF; background-size: 1440px; background-position: right; background-repeat: no-repeat; background-blend-mode: multiply;");
         $("#design-portfolio").delay(480).fadeIn("fast");
-        $("#small-logo").fadeOut();
+        // $("#small-logo").fadeOut();
     });
     $("#ui-menu").click(function () {
+        $("#small-logo").fadeIn();
         $("#gd-menu").animate({"width": "0%", "z-index": "0"}, 500).removeAttr();
         $("#ui-menu").animate({"width": "100%", "z-index": "999"}, 500).attr("style", "background-image: url('../images/about-bg-reverse.png'); background-color:  #FFFACC; color: #FFFFFF; background-size: 1440px; background-position: left; background-repeat: no-repeat; background-blend-mode: multiply;");
         $("#ui-portfolio").delay(480).fadeIn("fast");
-        $("#small-logo").fadeOut();
+        // $("#small-logo").fadeOut();
     });
 
 

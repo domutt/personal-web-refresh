@@ -385,9 +385,28 @@ P {
         background-color: rgba(255, 255, 255, 0.8);
         transition: .4s all; }
   #footer-container #small-logo {
-    width: 70px; }
+    display: none;
+    width: 18px;
+    animation: bounce 1s infinite alternate;
+    -webkit-animation: bounce 1s infinite alternate; }
     #footer-container #small-logo img {
       width: 100%; }
+
+@keyframes bounce {
+  from {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px); }
+  to {
+    -webkit-transform: translateY(-12px);
+            transform: translateY(-12px); } }
+
+@-webkit-keyframes bounce {
+  from {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px); }
+  to {
+    -webkit-transform: translateY(-12px);
+            transform: translateY(-12px); } }
 
 #loader {
   z-index: 9999;
