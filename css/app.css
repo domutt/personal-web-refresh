@@ -907,9 +907,8 @@ P {
 
 #super-1-title .list-item {
   background-color: black; }
-
-#super-1-title:hover {
-  background-color: #ff00ff; }
+  #super-1-title .list-item:hover {
+    background-color: #ff00ff; }
 
 #super-1-title .p-title {
   color: white; }
