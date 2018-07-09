@@ -20,30 +20,35 @@ $nav-height: 80px;
 //*********************************
 // FONTS **************************
 //*********************************
-// @include font-face("Monique", "/fonts/Monique-RegularRound20");
-// @include font-face("polya-webfont", "/fonts/polya-webfont");
+
+//*********************************
+// BREAKS *************************
+//*********************************
+$medium-break: 1024px;
+$small-break: 768px;
+$ex-small-break: 320px;
 //*********************************
 // Universal  *********************
 //*********************************
 *, *:before, *:after {
-    @include font-face("Monique", fonts/Monique-RegularRound20);
     -webkit-box-sizing: inherit;
     -moz-box-sizing: inherit;
     box-sizing: inherit;
 }
 html {
-    overflow-y: scroll;
+    // overflow-y: scroll;
 }
-body::-webkit-scrollbar {
-    // width: 0;
-}
+// body::-webkit-scrollbar {
+//     width: 0;
+// }
 
 body {
     /*z-index: 0;*/
     font-family: 'Work Sans', sans-serif;
     width: 100%;
-    cursor: crosshair;
-    height: 100%;
+    max-width: 1440px;
+    // cursor: crossshair;
+    height: auto;
     margin: 0 auto;
     padding: 0;
 	// background-color: $color-light;

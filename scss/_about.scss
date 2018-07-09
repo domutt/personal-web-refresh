@@ -1,6 +1,6 @@
 #about-container {
 	display: none;
-
+	overflow: hidden;
 }
 #about-bg {
 	position: fixed;
@@ -8,16 +8,18 @@
 	top: 0;
 	right: 0;
 	left: 0;
-	width: 100vw;
-	height: 100vh;
+	width: 100%;
+	height: 100%;
+	max-width: 1440px;
 	background-image: url("../images/about-bg-center.png");
 	background-color: #daf0e6;
-	background-size: 1440px;
+	background-size: cover;
 	background-position: center;
-	background-attachment: fixed;
+	// background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-blend-mode: multiply;
-	margin: auto;
+	margin: 0 auto;
+
 	// height: auto;
 }
 .about-inner {
@@ -32,6 +34,15 @@
 	#profile-container {
 		width: 250px;
 		height: 250px;
+		@media screen and (max-width: $medium-break) {
+			width: 200px;
+			height: 200px;
+	    }
+	    @media screen and (max-width: $small-break) {
+			width: 180px;
+			height: 180px;
+	    }
+		
 		#profile-pic {
 			width: 100%;
 			height: 100%;
@@ -48,6 +59,22 @@
 		letter-spacing: 2px;;
 		line-height: 45px;
 		font-weight: 700;
+		@media screen and (max-width: $medium-break) {
+			font-size: 32px;
+			line-height: 40px;
+	        width: 80%;
+	    }
+	    @media screen and (max-width: $small-break) {
+	        width: 85%;
+			font-size: 28px;
+			line-height: 38px;
+	    }
+		@media screen and (max-width: $ex-small-break) {
+	        width: 90%;
+			font-size: 20px;
+			line-height: 26px;
+
+	    }
 	}
 	.about-title {
 		font-size: 24px;
@@ -55,19 +82,47 @@
 		border: 2px solid #000;
 		padding: 0 10px;
 		margin-bottom: 1%;
+		@media screen and (max-width: $medium-break) {
+	        // width: 80%;
+	    }
+	    @media screen and (max-width: $small-break) {
+	        // width: 85%;
+			font-size: 20px;
+			line-height: 38px;
+	    }
+		// @media screen and (max-width: $ex-small-break) {
+	    //     width: 90%;
+		// 	font-size: 24px;
+		// 	line-height: 30px;
+	    // }
 	}
 	.about-items {
 		font-size: 20px;
 		margin-bottom: 3%;
 		width: 60%;
 		line-height: 36px;;
+		@media screen and (max-width: $small-break) {
+		   width: 90%;
+		   font-size: 16px;
+		   line-height: 30px;
+	   }
 	}
 	.connect {
 		font-size: 20px;
 		margin-bottom: 3%;
+		@media screen and (max-width: $small-break) {
+		   // width: 85%;
+		   font-size: 16px;
+		   // line-height: 30px;
+	   }
 	}
 	.my-links  {
 		font-size: 20px;
+		@media screen and (max-width: $small-break) {
+		   // width: 85%;
+		   font-size: 16px;
+		   // line-height: 30px;
+	   }
 		a {
 			color: $color-darkest;
 			text-decoration: none;

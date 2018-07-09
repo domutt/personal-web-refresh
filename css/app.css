@@ -1,20 +1,12 @@
 *, *:before, *:after {
   box-sizing: inherit; }
 
-@font-face {
-  *, *:before, *:after {
-    font-family: "Monique";
-    src: url("fonts/Monique-RegularRound20.eot?") format("eot"), url("fonts/Monique-RegularRound20.woff2") format("woff2"), url("fonts/Monique-RegularRound20.woff") format("woff"), url("fonts/Monique-RegularRound20.ttf") format("truetype"), url("fonts/Monique-RegularRound20.svg#Monique") format("svg"); } }
-
-html {
-  overflow-y: scroll; }
-
 body {
   /*z-index: 0;*/
   font-family: 'Work Sans', sans-serif;
   width: 100%;
-  cursor: crosshair;
-  height: 100%;
+  max-width: 1440px;
+  height: auto;
   margin: 0 auto;
   padding: 0;
   color: #030316; }
@@ -205,20 +197,23 @@ P {
 #splash-container {
   position: fixed;
   z-index: 1000;
-  top: 0;
   width: 100%;
   height: 100%;
+  max-width: 1440px;
   background-image: url("../images/about-bg-center.png");
   background-color: #D9F1FF;
-  background-size: 1440px;
+  background-size: cover;
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-blend-mode: multiply; }
+  background-blend-mode: multiply;
+  overflow: hidden; }
 
 .fast-about-me {
+  overflow: hidden;
   position: fixed;
   text-align: left;
+  max-width: 1440px;
   height: 100vh;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -230,16 +225,26 @@ P {
       -ms-flex-align: center;
           align-items: center; }
   .fast-about-me .fast-inner {
-    width: 80%;
-    margin-left: 10%;
+    width: 90%;
     font-size: 60px;
     font-weight: 800;
     display: none; }
+    @media screen and (max-width: 1024px) {
+      .fast-about-me .fast-inner {
+        font-size: 50px; } }
+    @media screen and (max-width: 768px) {
+      .fast-about-me .fast-inner {
+        font-size: 32px; } }
+    @media screen and (max-width: 320px) {
+      .fast-about-me .fast-inner {
+        font-size: 28px; } }
 
 .welcome-message {
+  overflow: hidden;
   position: fixed;
   width: 100%;
   text-align: left;
+  max-width: 1440px;
   height: 100vh;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -253,15 +258,24 @@ P {
   transition-delay: .5s; }
   .welcome-message .welcome-inner {
     display: none;
-    width: 80%;
+    width: 90%;
     height: auto;
     font-size: 200px;
     font-weight: 800;
-    color: white;
-    margin-top: -200px; }
+    color: white; }
+    @media screen and (max-width: 1024px) {
+      .welcome-message .welcome-inner {
+        font-size: 150px; } }
+    @media screen and (max-width: 768px) {
+      .welcome-message .welcome-inner {
+        font-size: 104px; } }
+    @media screen and (max-width: 320px) {
+      .welcome-message .welcome-inner {
+        font-size: 90px; } }
 
 #about-container {
-  display: none; }
+  display: none;
+  overflow: hidden; }
 
 #about-bg {
   position: fixed;
@@ -269,16 +283,16 @@ P {
   top: 0;
   right: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
+  max-width: 1440px;
   background-image: url("../images/about-bg-center.png");
   background-color: #daf0e6;
-  background-size: 1440px;
+  background-size: cover;
   background-position: center;
-  background-attachment: fixed;
   background-repeat: no-repeat;
   background-blend-mode: multiply;
-  margin: auto; }
+  margin: 0 auto; }
 
 .about-inner {
   z-index: 1;
@@ -298,6 +312,14 @@ P {
   .about-inner #profile-container {
     width: 250px;
     height: 250px; }
+    @media screen and (max-width: 1024px) {
+      .about-inner #profile-container {
+        width: 200px;
+        height: 200px; } }
+    @media screen and (max-width: 768px) {
+      .about-inner #profile-container {
+        width: 180px;
+        height: 180px; } }
     .about-inner #profile-container #profile-pic {
       width: 100%;
       height: 100%;
@@ -312,22 +334,52 @@ P {
     letter-spacing: 2px;
     line-height: 45px;
     font-weight: 700; }
+    @media screen and (max-width: 1024px) {
+      .about-inner #about-headline {
+        font-size: 32px;
+        line-height: 40px;
+        width: 80%; } }
+    @media screen and (max-width: 768px) {
+      .about-inner #about-headline {
+        width: 85%;
+        font-size: 28px;
+        line-height: 38px; } }
+    @media screen and (max-width: 320px) {
+      .about-inner #about-headline {
+        width: 90%;
+        font-size: 20px;
+        line-height: 26px; } }
   .about-inner .about-title {
     font-size: 24px;
     line-height: 36px;
     border: 2px solid #000;
     padding: 0 10px;
     margin-bottom: 1%; }
+    @media screen and (max-width: 768px) {
+      .about-inner .about-title {
+        font-size: 20px;
+        line-height: 38px; } }
   .about-inner .about-items {
     font-size: 20px;
     margin-bottom: 3%;
     width: 60%;
     line-height: 36px; }
+    @media screen and (max-width: 768px) {
+      .about-inner .about-items {
+        width: 90%;
+        font-size: 16px;
+        line-height: 30px; } }
   .about-inner .connect {
     font-size: 20px;
     margin-bottom: 3%; }
+    @media screen and (max-width: 768px) {
+      .about-inner .connect {
+        font-size: 16px; } }
   .about-inner .my-links {
     font-size: 20px; }
+    @media screen and (max-width: 768px) {
+      .about-inner .my-links {
+        font-size: 16px; } }
     .about-inner .my-links a {
       color: #000000;
       text-decoration: none; }
