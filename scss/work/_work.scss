@@ -28,9 +28,18 @@
 	.one-up {
 		display: flex;
 		justify-content: space-around;
-		width: 46%;
+		width: 45%;
 		margin-top: 4%;;
 		margin-bottom: 2%;;
+		@media screen and (max-width: $medium-break) {
+			width: 65%;
+		}
+		@media screen and (max-width: $small-break) {
+			width: 85%;
+		}
+		@media screen and (max-width: $ex-small-break) {
+			font-size: 90%;
+		}
 	}
 	.image-holder {
 		width: 100%;
@@ -45,12 +54,29 @@
 		justify-content: space-around;
 		flex-direction: row;
 		width: 80%;
+		@media screen and (max-width: $medium-break) {
+			flex-direction: column;
+		}
 		.two-pane-right {
 			width: 44%;
 			// height: 50%;
 
 			margin-top: 2%;;
 			margin-bottom: 2%;
+			@media screen and (max-width: $medium-break) {
+				width: 80%;
+				margin-left: 10%;
+			}
+			@media screen and (max-width: $small-break) {
+				width: 85%;
+				margin-left: 7.5%;
+			}
+			// @media screen and (max-width: $small-break) {
+			// 	width: 85%;
+			// }
+			// @media screen and (max-width: $ex-small-break) {
+			// 	font-size: 90%;
+			// }
 			img {
 				width: 100%;
 				height: auto;

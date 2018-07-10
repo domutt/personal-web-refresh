@@ -9,6 +9,7 @@
 	max-width: 1440px;
 	height: $nav-height;
 	margin: auto;
+    pointer-events:none;
 }
 #nav-logo {
     position: absolute;
@@ -34,12 +35,16 @@
 	}
 }
 #nav-buttons {
-	@include font-size(18px)
+	font-size: 18px;
 	font-weight: 400;
 	letter-spacing: 2.2px;
     position: absolute;
     width: 100%;
     color: $color-darker;
+
+    @media screen and (max-width: $small-break) {
+        font-size: 16px;
+    }
 }
 #nav-buttons-container {
     width: 100%;
@@ -72,6 +77,7 @@
 	}
 	.main-buttons {
 		padding:  8px;
+        pointer-events:auto;
 	}
 }
 // WORK Catergories
@@ -101,14 +107,45 @@
 		.skill-title {
 			font-size: 200px;
 			font-weight: 700;
+            @media screen and (max-width: $small-break) {
+                font-size: 160px;
+            }
+            @media screen and (max-width: 600px) {
+                font-size: 100px;
+            }
+            @media screen and (max-width: 460px) {
+                font-size: 60px;
+            }
 			#gd-outline {
 				padding: 20px;
 			}
 			#ui-outline {
-				padding: 20px 63px;
+				padding: 20px 60px;
+                @media screen and (max-width: $small-break) {
+                    padding: 20px 40px;
+                }
+                @media screen and (max-width: 600px) {
+                    padding: 20px 30px;
+                }
 			}
 		}
 	}
+}
+.descript {
+    color: black;
+    font-size: 28px;
+    font-weight: 700;
+    margin-top: -40px;
+    text-align: center;
+    @media screen and (max-width: $small-break) {
+        font-size: 24px;
+    }
+    @media screen and (max-width: 600px) {
+        font-size: 20px;
+    }
+    @media screen and (max-width: 460px) {
+        font-size: 16px;
+    }
 }
 #gd-menu{
 	width: 50%;

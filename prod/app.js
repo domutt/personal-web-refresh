@@ -6,18 +6,26 @@ $(window).on('load', function(){
     });
 });
 $(document).ready( function() {
-
-    $("#main-content").bind('mousewheel', function(event) {
-        if (event.originalEvent.wheelDelta >= 10) {
-            // $("#small-logo").fadeIn();
-        }
-        else {
+    $(window).scroll(function() {
+        if ($(this).scrollTop()>10) {
             $("#small-logo").fadeOut();
         }
-    });
+        else {
+            $("#small-logo").fadeIn();
+        }
+     });
+
+    // $("#main-content").on('scroll', function(event) {
+    //     if (event.originalEvent.wheelDelta >= 10) {
+    //         // $("#small-logo").fadeIn();
+    //     }
+    //     else {
+    //         $("#small-logo").fadeOut();
+    //     }
+    // });
     $( "#left-button" ).click(function() {
-        $("#small-logo").fadeOut();
-        // $("#logo").fadeIn();
+        $("#small-logo").stop().fadeOut();
+        $("#logo").fadeIn();
         $("#project-1-content").slideUp("slow", function (){
             $( "#project-1-button" ).removeClass('rotate');
         });
@@ -36,12 +44,14 @@ $(document).ready( function() {
         $("#gd-menu").delay(1000).animate({"width": "50%"});
         $("#ui-menu").delay(1000).animate({"width": "50%"});
         $("#about-container").scrollTop(0).fadeIn("slow");
+        $(".descript").removeAttr("style");
         // $("#small-logo").fadeOut();
+        // $("#footer-container").fadeIn();
     });
 
     $( "#right-button" ).click(function() {
         $("#small-logo").fadeOut();
-        // $("#logo").fadeIn();
+        $("#logo").fadeIn();
         $("#project-1-content").slideUp("slow", function (){
             $( "#project-1-button" ).removeClass('rotate');
         });
@@ -63,13 +73,17 @@ $(document).ready( function() {
         $("#ui-portfolio").hide();
         $("#ui-menu").removeAttr("style");
         $("#gd-menu").removeAttr("style");
+        $(".descript").removeAttr("style");
+        // $("#footer-container").fadeIn();
     });
     $("#gd-menu").click(function () {
         $("#small-logo").fadeIn();
         $("#ui-menu").animate({"width": "0%", "z-index": "0"}, 500).removeAttr();
         $("#gd-menu").animate({"width": "100%", "z-index": "999"}, 500).attr("style", "background-image: url('../images/about-bg.png'); background-color:  #FFDEFD; color: #FFFFFF; background-size: 1440px; background-position: right; background-repeat: no-repeat; background-blend-mode: multiply;");
         $("#design-portfolio").delay(480).fadeIn("fast");
+        $(".descript").attr("style", "color: grey");
         // $("#small-logo").fadeOut();
+        // $("#footer-container").fadeOut();
     });
     $("#ui-menu").click(function () {
         $("#small-logo").fadeIn();
@@ -77,6 +91,8 @@ $(document).ready( function() {
         $("#ui-menu").animate({"width": "100%", "z-index": "999"}, 500).attr("style", "background-image: url('../images/about-bg-reverse.png'); background-color:  #FFFACC; color: #FFFFFF; background-size: 1440px; background-position: left; background-repeat: no-repeat; background-blend-mode: multiply;");
         $("#ui-portfolio").delay(480).fadeIn("fast");
         // $("#small-logo").fadeOut();
+        $(".descript").attr("style", "color: grey");
+        // $("#footer-container").fadeOut();
     });
 
 

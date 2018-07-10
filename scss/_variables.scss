@@ -59,10 +59,28 @@ h1 {
 	font-size: 36px;
 	color: $color-darker;
     // margin:80px 0;
+    @media screen and (max-width: $medium-break) {
+        font-size: 30px;
+    }
+    @media screen and (max-width: $small-break) {
+        font-size: 24px;
+    }
+    @media screen and (max-width: $ex-small-break) {
+        font-size: 20px;
+    }
 }
 h2 {
     font-size: 28px;
 	color: $color-darker;
+    @media screen and (max-width: $medium-break) {
+        font-size: 24px;
+    }
+    @media screen and (max-width: $small-break) {
+        font-size: 20px;
+    }
+    @media screen and (max-width: $ex-small-break) {
+        font-size: 16px;
+    }
 }
 h3 {
 

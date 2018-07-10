@@ -14,10 +14,28 @@ body {
 h1 {
   font-size: 36px;
   color: #030316; }
+  @media screen and (max-width: 1024px) {
+    h1 {
+      font-size: 30px; } }
+  @media screen and (max-width: 768px) {
+    h1 {
+      font-size: 24px; } }
+  @media screen and (max-width: 320px) {
+    h1 {
+      font-size: 20px; } }
 
 h2 {
   font-size: 28px;
   color: #030316; }
+  @media screen and (max-width: 1024px) {
+    h2 {
+      font-size: 24px; } }
+  @media screen and (max-width: 768px) {
+    h2 {
+      font-size: 20px; } }
+  @media screen and (max-width: 320px) {
+    h2 {
+      font-size: 16px; } }
 
 P {
   font-size: 18px;
@@ -34,7 +52,8 @@ P {
   width: 100%;
   max-width: 1440px;
   height: 80px;
-  margin: auto; }
+  margin: auto;
+  pointer-events: none; }
 
 #nav-logo {
   position: absolute;
@@ -64,12 +83,14 @@ P {
 
 #nav-buttons {
   font-size: 18px;
-  font-size: 1.125rem;
   font-weight: 400;
   letter-spacing: 2.2px;
   position: absolute;
   width: 100%;
   color: #030316; }
+  @media screen and (max-width: 768px) {
+    #nav-buttons {
+      font-size: 16px; } }
 
 #nav-buttons-container {
   width: 100%;
@@ -105,7 +126,8 @@ P {
       background-color: rgba(255, 255, 255, 0.8);
       transition: .4s all; }
   #nav-buttons-container .main-buttons {
-    padding: 8px; }
+    padding: 8px;
+    pointer-events: auto; }
 
 #hide-menu {
   display: none;
@@ -146,10 +168,41 @@ P {
     #menu-container .menu-options .skill-title {
       font-size: 200px;
       font-weight: 700; }
+      @media screen and (max-width: 768px) {
+        #menu-container .menu-options .skill-title {
+          font-size: 160px; } }
+      @media screen and (max-width: 600px) {
+        #menu-container .menu-options .skill-title {
+          font-size: 100px; } }
+      @media screen and (max-width: 460px) {
+        #menu-container .menu-options .skill-title {
+          font-size: 60px; } }
       #menu-container .menu-options .skill-title #gd-outline {
         padding: 20px; }
       #menu-container .menu-options .skill-title #ui-outline {
-        padding: 20px 63px; }
+        padding: 20px 60px; }
+        @media screen and (max-width: 768px) {
+          #menu-container .menu-options .skill-title #ui-outline {
+            padding: 20px 40px; } }
+        @media screen and (max-width: 600px) {
+          #menu-container .menu-options .skill-title #ui-outline {
+            padding: 20px 30px; } }
+
+.descript {
+  color: black;
+  font-size: 28px;
+  font-weight: 700;
+  margin-top: -40px;
+  text-align: center; }
+  @media screen and (max-width: 768px) {
+    .descript {
+      font-size: 24px; } }
+  @media screen and (max-width: 600px) {
+    .descript {
+      font-size: 20px; } }
+  @media screen and (max-width: 460px) {
+    .descript {
+      font-size: 16px; } }
 
 #gd-menu {
   width: 50%;
@@ -397,48 +450,13 @@ P {
 #footer-container {
   position: fixed;
   z-index: 4000;
-  bottom: 0;
+  bottom: 8%;
   left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 100%;
-  max-width: 1440px;
-  height: 70px;
-  margin-top: 3%;
-  margin-bottom: 0; }
-  #footer-container .three-foot {
-    margin: 0 18px; }
-    #footer-container .three-foot a {
-      color: black;
-      text-decoration: none; }
-    #footer-container .three-foot .email-me {
-      background-color: rgba(255, 255, 255, 0.2);
-      padding: 10px 18px;
-      transition: .4s all; }
-      #footer-container .three-foot .email-me:hover {
-        box-shadow: 2px -1.5px #030316;
-        background-color: rgba(255, 255, 255, 0.8);
-        transition: .4s all; }
-    #footer-container .three-foot .linkedin-me {
-      background-color: rgba(255, 255, 255, 0.2);
-      padding: 10px 18px; }
-      #footer-container .three-foot .linkedin-me:hover {
-        box-shadow: -2px -1.5px #030316;
-        background-color: rgba(255, 255, 255, 0.8);
-        transition: .4s all; }
+  right: 0; }
   #footer-container #small-logo {
     display: none;
-    width: 18px;
+    margin: 0 auto;
+    width: 22px;
     animation: bounce 1s infinite alternate;
     -webkit-animation: bounce 1s infinite alternate; }
     #footer-container #small-logo img {
@@ -596,28 +614,27 @@ P {
     line-height: 30px;
     font-weight: 700;
     text-align: justify; }
-
-.project-headline {
-  width: 100%; }
-  .project-headline .project-box {
-    font-weight: 700;
-    font-size: 30px;
-    margin-left: 12%;
-    width: 76%;
-    padding: 1.6% 0; }
+    @media screen and (max-width: 1024px) {
+      .about-starz .about-company {
+        font-size: 18px;
+        line-height: 28px; } }
+    @media screen and (max-width: 768px) {
+      .about-starz .about-company {
+        font-size: 16px;
+        line-height: 26px; } }
 
 #starz-proj-1 {
-  background-color: white;
+  background-color: yellow;
   color: #0A0624; }
   #starz-proj-1:hover {
-    background-color: yellow;
+    background-color: white;
     color: #0A0624; }
 
 #starz-proj-2 {
-  background-color: white;
+  background-color: #FF3333;
   color: #0A0624; }
   #starz-proj-2:hover {
-    background-color: #FF3333;
+    background-color: white;
     color: #0A0624; }
 
 .project-list {
@@ -640,6 +657,17 @@ P {
     width: 76%;
     font-size: 30px;
     font-weight: 600; }
+    @media screen and (max-width: 1024px) {
+      .project-list .list-item {
+        font-size: 24px; } }
+    @media screen and (max-width: 768px) {
+      .project-list .list-item {
+        font-size: 22px;
+        width: 98%;
+        padding: 2.2% 1%; } }
+    @media screen and (max-width: 320px) {
+      .project-list .list-item {
+        font-size: 20px; } }
     .project-list .list-item .plus-minus {
       display: inline-block;
       width: 32px;
@@ -663,15 +691,14 @@ P {
           justify-content: flex-start;
   width: 32px;
   height: 32px; }
-  .expand-unexpand .plus-minus {
-    display: inline-block;
-    width: 32px;
-    height: 32px;
-    background-image: url("../images/icons/plus.png");
-    background-size: 70%;
-    background-repeat: no-repeat;
-    background-position: center;
-    transition: 1s all; }
+  @media screen and (max-width: 1024px) {
+    .expand-unexpand {
+      width: 28px;
+      height: 28px; } }
+  @media screen and (max-width: 768px) {
+    .expand-unexpand {
+      width: 24px;
+      height: 24px; } }
 
 .rotate {
   -webkit-transform: rotate(45deg);
@@ -682,37 +709,77 @@ P {
 
 .project-team {
   width: 76%;
-  border-bottom: 10px solid white;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   margin: auto;
   background-color: white; }
+  @media screen and (max-width: 1024px) {
+    .project-team {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      width: 84%; } }
+  @media screen and (max-width: 768px) {
+    .project-team {
+      width: 100%; } }
   .project-team .twentyfive-perc {
     width: 25%;
     padding: 0 .5%; }
+    @media screen and (max-width: 1024px) {
+      .project-team .twentyfive-perc {
+        width: 100%;
+        padding: 0; } }
   .project-team .thirty-perc {
-    position: relative;
     width: 33.32%;
     padding: 0 .5%; }
+    @media screen and (max-width: 1024px) {
+      .project-team .thirty-perc {
+        width: 100%;
+        padding: 0; } }
   .project-team .two-thirds {
     width: 66.65%;
     padding: 0 .5%; }
+    @media screen and (max-width: 1024px) {
+      .project-team .two-thirds {
+        width: 100%;
+        padding: 0; } }
   .project-team .fifty-perc {
     width: 50%;
     padding: 0 .5%; }
+    @media screen and (max-width: 1024px) {
+      .project-team .fifty-perc {
+        width: 100%;
+        padding: 0; } }
   .project-team .title-of {
     font-weight: 800;
-    letter-spacing: 2px;
-    padding: 8px 0;
+    font-size: 18px;
+    padding: 8px;
     color: black;
     background-color: yellow; }
+    @media screen and (max-width: 1024px) {
+      .project-team .title-of {
+        font-size: 16px; } }
+    @media screen and (max-width: 768px) {
+      .project-team .title-of {
+        font-size: 14px; } }
   .project-team .sub-text-of {
     font-size: 18px;
-    line-height: 30px;
     background-color: white;
     color: #0A0624;
-    padding-top: 10px; }
+    padding: 8px; }
+    @media screen and (max-width: 1024px) {
+      .project-team .sub-text-of {
+        font-size: 16px; } }
+    @media screen and (max-width: 768px) {
+      .project-team .sub-text-of {
+        font-size: 14px; } }
 
 .divider {
   width: 40%;
@@ -727,16 +794,38 @@ P {
   padding: 6%;
   width: 50%;
   background-color: #0A0624; }
+  @media screen and (max-width: 1024px) {
+    .project-cons {
+      width: 70%;
+      margin-left: 9%; } }
+  @media screen and (max-width: 768px) {
+    .project-cons {
+      width: 84%;
+      margin-left: 2%; } }
   .project-cons .big-type-cons {
     padding: 1%;
     font-size: 34px;
     font-weight: 600;
     color: #FAF800; }
+    @media screen and (max-width: 1024px) {
+      .project-cons .big-type-cons {
+        font-size: 28px; } }
+    @media screen and (max-width: 768px) {
+      .project-cons .big-type-cons {
+        font-size: 22px; } }
   .project-cons .overview-copy-cons {
     padding: 0 4% 4% 1%;
     font-size: 20px;
     line-height: 30px;
     margin: 3%; }
+    @media screen and (max-width: 1024px) {
+      .project-cons .overview-copy-cons {
+        font-size: 18px;
+        line-height: 26px; } }
+    @media screen and (max-width: 768px) {
+      .project-cons .overview-copy-cons {
+        font-size: 16px;
+        line-height: 22px; } }
 
 .project-overview {
   width: 76%;
@@ -751,6 +840,12 @@ P {
     font-size: 32px;
     font-weight: 600;
     color: #0A0624; }
+    @media screen and (max-width: 1024px) {
+      .project-overview .big-type {
+        font-size: 26px; } }
+    @media screen and (max-width: 768px) {
+      .project-overview .big-type {
+        font-size: 20px; } }
   .project-overview .overview-copy {
     width: 94%;
     padding: 3%;
@@ -758,12 +853,14 @@ P {
     font-size: 20px;
     line-height: 30px;
     color: #0A0624; }
-  .project-overview .overview-copy-sub {
-    width: 94%;
-    padding: 3% 3% 0 3%;
-    font-size: 20px;
-    color: #0A0624;
-    line-height: 30px; }
+    @media screen and (max-width: 1024px) {
+      .project-overview .overview-copy {
+        font-size: 18px;
+        line-height: 26px; } }
+    @media screen and (max-width: 768px) {
+      .project-overview .overview-copy {
+        font-size: 16px;
+        line-height: 22px; } }
   .project-overview .bold-overview {
     font-weight: 600; }
 
@@ -779,19 +876,43 @@ P {
     width: 94%;
     font-weight: 400;
     font-size: 28px; }
+    @media screen and (max-width: 1024px) {
+      .process-steps .step-copy {
+        font-size: 24px; } }
+    @media screen and (max-width: 768px) {
+      .process-steps .step-copy {
+        font-size: 20px; } }
     .process-steps .step-copy .number {
       font-size: 30px;
       font-weight: 600;
       color: #FAF800; }
+      @media screen and (max-width: 1024px) {
+        .process-steps .step-copy .number {
+          font-size: 26px; } }
+      @media screen and (max-width: 768px) {
+        .process-steps .step-copy .number {
+          font-size: 22px; } }
 
 .process-step-description {
   width: 76%;
   margin-left: 12%;
   font-size: 20px; }
+  @media screen and (max-width: 1024px) {
+    .process-step-description {
+      font-size: 18px; } }
+  @media screen and (max-width: 768px) {
+    .process-step-description {
+      font-size: 16px; } }
   .process-step-description .step-info {
     padding: 3%;
     width: 94%;
     line-height: 30px; }
+    @media screen and (max-width: 1024px) {
+      .process-step-description .step-info {
+        line-height: 26px; } }
+    @media screen and (max-width: 768px) {
+      .process-step-description .step-info {
+        line-height: 22px; } }
 
 .image-caption {
   color: #E2E2E9; }
@@ -977,9 +1098,9 @@ P {
     margin: -2.3% 0; }
 
 #super-1-title .list-item {
-  background-color: black; }
+  background-color: #ff00ff; }
   #super-1-title .list-item:hover {
-    background-color: #ff00ff; }
+    background-color: black; }
 
 #super-1-title .p-title {
   color: white; }
@@ -1018,6 +1139,14 @@ P {
       line-height: 30px;
       font-weight: 700;
       text-align: justify; }
+      @media screen and (max-width: 1024px) {
+        #supernova-container .about-starz .about-company {
+          font-size: 18px;
+          line-height: 28px; } }
+      @media screen and (max-width: 768px) {
+        #supernova-container .about-starz .about-company {
+          font-size: 16px;
+          line-height: 26px; } }
 
 #super-1-content {
   display: none;
@@ -1108,9 +1237,18 @@ P {
     -webkit-justify-content: space-around;
         -ms-flex-pack: distribute;
             justify-content: space-around;
-    width: 46%;
+    width: 45%;
     margin-top: 4%;
     margin-bottom: 2%; }
+    @media screen and (max-width: 1024px) {
+      #main-content .one-up {
+        width: 65%; } }
+    @media screen and (max-width: 768px) {
+      #main-content .one-up {
+        width: 85%; } }
+    @media screen and (max-width: 320px) {
+      #main-content .one-up {
+        font-size: 90%; } }
   #main-content .image-holder {
     width: 100%;
     height: auto; }
@@ -1128,10 +1266,23 @@ P {
         -ms-flex-direction: row;
             flex-direction: row;
     width: 80%; }
+    @media screen and (max-width: 1024px) {
+      #main-content .two-up {
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column; } }
     #main-content .two-up .two-pane-right {
       width: 44%;
       margin-top: 2%;
       margin-bottom: 2%; }
+      @media screen and (max-width: 1024px) {
+        #main-content .two-up .two-pane-right {
+          width: 80%;
+          margin-left: 10%; } }
+      @media screen and (max-width: 768px) {
+        #main-content .two-up .two-pane-right {
+          width: 85%;
+          margin-left: 7.5%; } }
       #main-content .two-up .two-pane-right img {
         width: 100%;
         height: auto; }
