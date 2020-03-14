@@ -42,7 +42,7 @@ gulp.task('concatScripts', function(){
   .pipe(maps.init())
   .pipe(concat('app.js'))
   .pipe(maps.write('../maps')) // source map for debugging
-  .pipe(gulp.dest('js'))
+  .pipe(gulp.dest('js'));
 });
 
 //=======================================
@@ -51,17 +51,16 @@ gulp.task('concatScripts', function(){
 //=======================================
 gulp.task('minifyScripts', ['concatScripts'], function(){
   return gulp.src('js/app.js')
-  // minifies code
+  // minifies js code
   .pipe(uglify())
   // rename file to app.min.js
   .pipe(rename('app.min.js'))
-  .pipe(gulp.dest('js'))
+  .pipe(gulp.dest('js'));
 });
 
 //=======================================
 // sass -> css
 //=======================================
-
 gulp.task('compileSass', function(){
     return gulp.src('scss/**/*.scss')
     .pipe(maps.init())
@@ -72,7 +71,7 @@ gulp.task('compileSass', function(){
     .pipe(maps.write('../maps')) // source map for debugging
     .pipe(rename('app.css'))
     .pipe(gulp.dest('css'))
-    .pipe(browserSync.stream())
+    .pipe(browserSync.stream());
 });
 
 gulp.task('minifyCss', ['compileSass'], function () {
@@ -82,74 +81,9 @@ gulp.task('minifyCss', ['compileSass'], function () {
     .pipe(gulp.dest('css'));
 });
 
-var templateData = {
-    blurb: 'OUTDOOR FESTIVAL OF DIGITAL ANIMATION AND ART',
-    about: 'ABOUT',
-    sched: 'SCHEDULE',
-    aboutmenu: ['SCHEDULE | MAP', 'JURORS', 'TEAM','SPONSORS', 'HISTORY', 'PRESS'],
-    schedmenu: ['SCHEDULE | MAP', 'JURORS', 'TEAM','SPONSORS', 'HISTORY', 'PRESS'],
-    sponsorlinks: [
-        {
-          url: '<a href="http://www.denverdigerati.com"   target="_blank">',
-          img: '<img src="images/logos/3.png" alt="Sponsor Logos">'
-        },
-        {
-          url: '<a href="http://www.denvertheatredistrict.com" target="_blank">',
-          img: '<img src="images/logos/4.png" alt="Sponsor Logos">'
-        },
-        {
-          url: '<a href="http://artsandvenuesdenver.com" target="_blank">',
-          img:'<img src="images/logos/1.png" alt="Sponsor Logos">'
-        },
-        {
-          url: '<a href="http://www.artsandvenuesdenver.com/venues/denver-performing-arts-complex/the-next-stage-unveiled" target="_blank">',
-          img: '<img src="images/logos/2.png" alt="Sponsor Logos">'
-        },
-        {
-          url: '<a href="https://bonfils-stantonfoundation.org" target="_blank">',
-          img: '<img src="images/logos/16.png" alt="Sponsor Logos">'
-        },
-        {
-          url: '<a href="https://denver.meowwolf.com" target="_blank">',
-          img: '<img src="images/logos/17.png" alt="Sponsor Logos">'
-        },
-        {
-          url: '<a href="http://www.ucdenver.edu/schools/cam/Pages/default.aspx" target="_blank">',
-          img: '<img src="images/logos/5.png" alt="Sponsor Logos">'
-        },
-        {
-          url: '<a href="http://understudydenver.com" target="_blank">',
-          img: '<img src="images/logos/18.png" alt="Sponsor Logos">'
-        },
-        {
-          url: '<a href="http://moaonline.org" target="_blank">',
-          img: '<img src="images/logos/19.png" alt="Sponsor Logos">'
-        },
-        {
-          url: '<a href="http://coloradofilm.org" target="_blank">',
-          img: '<img src="images/logos/20.png" alt="Sponsor Logos">'
-        },
-        {
-          url: '<a href="http://www.denverfilm.org" target="_blank">',
-          img: '<img src="images/logos/12.png" alt="Sponsor Logos">'
-        },
-        {
-          url: '<a href="http://www.orangebarrelmedia.com/" target="_blank">',
-          img: '<img src="images/logos/7.png" alt="Sponsor Logos">'
-        },
-        {
-          url: '<a href="http://brandedcities.com" target="_blank">',
-          img: '<img src="images/logos/8.png" alt="Sponsor Logos">'
-        },
-        {
-          url: '<a href="https://denver.grand.hyatt.com/en/hotel/home.html" target="_blank">',
-          img: '<img src="images/logos/14.png" alt="Sponsor Logos">'
-        },
-    ]
-}
 gulp.task('handle', function () {
     return gulp.src('templates/layout.handlebars')
-        .pipe(handlebars(templateData))
+        .pipe(handlebars())
         .pipe(rename('index.html'))
         .pipe(gulp.dest('dist'))
         .pipe(gulp.dest('./'));
@@ -182,8 +116,8 @@ gulp.task('clean', function(){
 // build production dirrectory
 //=======================================
 gulp.task('build', ['minifyScripts', 'minifyCss', 'handle'], function(){
-    return gulp.src(['css/app.min.css', 'js/app.min.js', 'index.html', 'images/**', 'fonts/**', 'pages/**'], { base: './' })
-    .pipe(gulp.dest('dist'))
+    return gulp.src(['css/app.min.css', 'js/app.min.js', 'index.html', 'images/**', 'fonts/**'], { base: './' })
+    .pipe(gulp.dest('dist'));
 });
 
 
