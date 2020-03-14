@@ -1,4 +1,3 @@
-//
 $(window).on('load', function(){
     $("#loader").fadeOut(function(){
         $(".fast-inner").delay(600).fadeIn(1000);

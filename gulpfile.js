@@ -42,7 +42,7 @@ gulp.task('concatScripts', function(){
   .pipe(maps.init())
   .pipe(concat('app.js'))
   .pipe(maps.write('../maps')) // source map for debugging
-  .pipe(gulp.dest('js'));
+  .pipe(gulp.dest('js'))
 });
 
 //=======================================
@@ -51,11 +51,11 @@ gulp.task('concatScripts', function(){
 //=======================================
 gulp.task('minifyScripts', ['concatScripts'], function(){
   return gulp.src('js/app.js')
-  // minifies js code
+  // minifies code
   .pipe(uglify())
   // rename file to app.min.js
   .pipe(rename('app.min.js'))
-  .pipe(gulp.dest('js'));
+  .pipe(gulp.dest('js'))
 });
 
 //=======================================
@@ -71,7 +71,7 @@ gulp.task('compileSass', function(){
     .pipe(maps.write('../maps')) // source map for debugging
     .pipe(rename('app.css'))
     .pipe(gulp.dest('css'))
-    .pipe(browserSync.stream());
+    .pipe(browserSync.stream())
 });
 
 gulp.task('minifyCss', ['compileSass'], function () {
@@ -116,8 +116,8 @@ gulp.task('clean', function(){
 // build production dirrectory
 //=======================================
 gulp.task('build', ['minifyScripts', 'minifyCss', 'handle'], function(){
-    return gulp.src(['css/app.min.css', 'js/app.min.js', 'index.html', 'images/**', 'fonts/**'], { base: './' })
-    .pipe(gulp.dest('dist'));
+    return gulp.src(['css/app.min.css', 'js/app.min.js', 'index.html', 'images/**', 'fonts/**', 'pages/**'], { base: './' })
+    .pipe(gulp.dest('dist'))
 });
 
 

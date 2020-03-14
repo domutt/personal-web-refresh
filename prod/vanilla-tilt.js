@@ -1,3 +1,4 @@
+/* jshint esversion: 6 */
 var VanillaTilt = (function () {
 'use strict';
 
